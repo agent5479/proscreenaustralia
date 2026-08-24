@@ -76,6 +76,19 @@ for (const [label, text] of [
   if (!text.includes('Allow: /')) fail(`${label}: missing Allow: /`)
 }
 
+const homeHtml = read(path.join(distDir, 'index.html'))
+if (homeHtml) {
+  if (!/<html lang="en-AU">/i.test(homeHtml)) {
+    fail('Home HTML must set lang="en-AU"')
+  }
+  if (!homeHtml.includes('"@type":"WebSite"')) {
+    fail('Home JSON-LD must include WebSite')
+  }
+  if (!homeHtml.includes('"@type":"LocalBusiness"')) {
+    fail('Home JSON-LD must include LocalBusiness')
+  }
+}
+
 // Sample public product page meta
 const product = routeByPath.get('/products/slg-78vf')
 const productHtml = read(path.join(distDir, 'products/slg-78vf/index.html'))

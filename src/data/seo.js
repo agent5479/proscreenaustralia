@@ -448,8 +448,18 @@ export const notFoundSeo = {
 
 const localBusinessId = `${contact.siteUrl}/#organization`
 
+export const websiteJsonLd = {
+  '@type': 'WebSite',
+  '@id': `${contact.siteUrl}/#website`,
+  url: contact.siteUrl,
+  name: siteName,
+  description:
+    'DeSite soil, gravel and aggregate screeners for Australia. Portable vibratory ProScreens from Pro Screen Australia.',
+  publisher: { '@id': localBusinessId },
+  inLanguage: 'en-AU',
+}
+
 export const organizationJsonLd = {
-  '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': localBusinessId,
   name: 'Pro Screen Australia',
@@ -469,6 +479,13 @@ export const organizationJsonLd = {
     '@type': 'Country',
     name: 'Australia',
   },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: contact.phoneTel,
+    contactType: 'sales',
+    areaServed: 'AU',
+    availableLanguage: ['English'],
+  },
   priceRange: '$$',
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
@@ -485,6 +502,8 @@ export const organizationJsonLd = {
     'vibratory screening equipment',
     'cow race gravel screening',
     'on-site civil fill screening',
+    'topsoil and landscaping screening',
+    'aggregate and road metal screening',
   ],
   makesOffer: [
     {
@@ -527,7 +546,37 @@ export const organizationJsonLd = {
         url: `${contact.siteUrl}/for/civil-contractors`,
       },
     },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Topsoil and landscaping screening supply',
+        url: `${contact.siteUrl}/for/topsoil-landscaping`,
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Aggregate and road metal screening supply',
+        url: `${contact.siteUrl}/for/aggregate-and-road-metal`,
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Equipment viewing and nationwide screener supply',
+        url: `${contact.siteUrl}/for/view-in-your-area`,
+      },
+    },
   ],
+}
+
+/** Home page entity graph: WebSite + LocalBusiness for crawlers and AI engines. */
+export const homeJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [websiteJsonLd, organizationJsonLd],
 }
 
 function providerRef() {
@@ -558,7 +607,7 @@ function productJsonLd(route) {
         '@type': 'Country',
         name: 'Australia',
       },
-      description: 'Contact Pro Screen Australia for current pricing. Freight arranged with the purchaser; freight arranged with purchaser.',
+      description: 'Contact Pro Screen Australia for current pricing and freight.',
     },
   }
 }
@@ -634,7 +683,7 @@ export function getJsonLd(pathname) {
 
   switch (route.schemaType) {
     case 'home':
-      return organizationJsonLd
+      return homeJsonLd
     case 'product':
       return productJsonLd(route)
     case 'service':

@@ -96,6 +96,16 @@ function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
+/** Pin a low rendition on constrained links; otherwise leave Vimeo on auto (capped in the embed URL). */
+function heroPinnedQuality() {
+  const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection
+  if (!conn) return null
+  if (conn.saveData) return '360p'
+  if (conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g') return '240p'
+  if (conn.effectiveType === '3g') return '360p'
+  return null
+}
+
 function loadVimeoPlayer() {
   if (window.Vimeo?.Player) return Promise.resolve(window.Vimeo.Player)
   if (vimeoPlayerLoader) return vimeoPlayerLoader
@@ -156,6 +166,8 @@ function bindHeroVideo(root) {
     .then((Player) => {
       if (cancelled) return
       player = new Player(iframe)
+      const pinned = heroPinnedQuality()
+      if (pinned) player.setQuality(pinned).catch(() => {})
       observer = new IntersectionObserver(
         (entries) => {
           const entry = entries[0]

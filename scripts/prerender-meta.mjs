@@ -72,7 +72,7 @@ function injectMeta(html, route, { bodyHtml } = {}) {
     ${jsonLd}
   `
 
-  let out = html
+  let out = html.replace(/<html lang="[^"]*">/i, '<html lang="en-AU">')
   // Strip tags we will re-inject so route-specific robots/canonical win
   out = out.replace(/<title>[\s\S]*?<\/title>/gi, '')
   out = out.replace(/<meta\s+name="description"[^>]*>/gi, '')
