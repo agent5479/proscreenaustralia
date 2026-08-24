@@ -8,14 +8,17 @@
   color-scheme: light;
   --brand: #0099d8;
   --brand-dark: #006a9a;
-  --heading: #1a1a1a;
-  --bg-page: #efe8dc;
-  --bg-band: #e6ddd0;
-  --bg-card: #f6f8fa;
+  --navy: #004e73;
+  --heading: #0d2a3a;
+  --text: #1a3344;
+  --text-muted: #3d5a6c;
+  --bg-page: #e8f4fb;
+  --bg-band: #d3ebf6;
+  --bg-card: #ffffff;
   --bg-nav: #006a9a;
-  --bg-footer: #e4dbce;
-  --border-card: #d5dde4;
-  --shadow-card: 0 4px 16px rgba(62, 45, 26, 0.08);
+  --bg-footer: #004e73;
+  --border-card: #b7d7e8;
+  --shadow-card: 0 4px 16px rgba(0, 74, 115, 0.12);
 }
 
 html {
@@ -25,12 +28,12 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   background: var(--bg-page);
-  color: #1a1a1a;
+  color: var(--text);
   line-height: 1.6;
 }
 
 ::placeholder {
-  color: #6b6b6b;
+  color: var(--text-muted);
   opacity: 1;
 }
 
@@ -227,8 +230,8 @@ body {
 }
 
 .hero-badge {
-  background: rgba(255,166,0,0.95);
-  color: #000;
+  background: var(--brand-dark);
+  color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 13px;
@@ -264,7 +267,7 @@ body {
 }
 
 .hero-cta {
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
+  background: linear-gradient(135deg, #006a9a, #0099d8);
   color: #fff;
   padding: 18px 40px;
   border-radius: 50px;
@@ -427,7 +430,7 @@ body {
 .section-subtitle {
   text-align: center;
   font-size: 1.2rem;
-  color: #555555;
+  color: var(--text-muted);
   margin-bottom: 40px;
   max-width: 700px;
   margin-left: auto;
@@ -485,11 +488,11 @@ body {
   object-position: center;
   display: block;
   transition: transform 0.4s ease, opacity 0.3s ease;
-  background: #f7f7f7;
-  background-image: linear-gradient(45deg, #ececec 25%, transparent 25%),
-                    linear-gradient(-45deg, #ececec 25%, transparent 25%),
-                    linear-gradient(45deg, transparent 75%, #ececec 75%),
-                    linear-gradient(-45deg, transparent 75%, #ececec 75%);
+  background: #e8f4fb;
+  background-image: linear-gradient(45deg, #d3ebf6 25%, transparent 25%),
+                    linear-gradient(-45deg, #d3ebf6 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #d3ebf6 75%),
+                    linear-gradient(-45deg, transparent 75%, #d3ebf6 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
@@ -500,7 +503,7 @@ body {
 
 .equipment-image[src=""],
 .equipment-image:not([src]) {
-  background: #f7f7f7;
+  background: #e8f4fb;
   position: relative;
 }
 
@@ -528,7 +531,7 @@ body {
 
 .catalog-sku-media {
   height: 210px;
-  background: #eeeeee;
+  background: var(--bg-band);
   overflow: hidden;
   margin-bottom: 16px;
 }
@@ -556,7 +559,7 @@ body {
 
 .equipment-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
+  background: linear-gradient(135deg, #006a9a, #0099d8);
   color: #1a1a1a;
   padding: 5px 12px;
   border-radius: 15px;
@@ -630,7 +633,7 @@ body {
 
 .equipment-cta {
   display: inline-block;
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
+  background: linear-gradient(135deg, #006a9a, #0099d8);
   color: #fff;
   padding: 14px 30px;
   border-radius: 25px;
@@ -775,7 +778,7 @@ body {
 .spec-list li {
   padding: 10px 0;
   color: #2c2c2c;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #d3ebf6;
   font-size: 1rem;
 }
 
@@ -877,7 +880,7 @@ body {
   display: none;
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 2px solid #ececec;
+  border-top: 2px solid #d3ebf6;
 }
 
 .feature-expand.active {
@@ -904,7 +907,7 @@ body {
 .feature-expand li {
   padding: 10px 0;
   color: #555555;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #d3ebf6;
   font-size: 0.95rem;
 }
 
@@ -916,7 +919,7 @@ body {
 }
 
 .expand-btn {
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
+  background: linear-gradient(135deg, #006a9a, #0099d8);
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -946,12 +949,12 @@ body {
 }
 
 .advantage-card {
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
-  color: #1a1a1a;
+  background: var(--brand-dark);
+  color: #fff;
   padding: 30px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 6px 20px rgba(212,84,0,0.28);
+  box-shadow: 0 6px 20px rgba(0, 78, 115, 0.28);
   transition: transform 0.3s;
 }
 
@@ -963,12 +966,14 @@ body {
   font-size: 1.2rem;
   margin-bottom: 10px;
   font-weight: 800;
+  color: #fff !important;
 }
 
 .advantage-card p {
   font-size: 0.95rem;
   opacity: 0.95;
   line-height: 1.5;
+  color: #e6f5fb;
 }
 
 /* Calculator Styles */
@@ -979,7 +984,7 @@ body {
 #productionRate:focus, #pricePerCubic:focus {
   outline: none;
   border-color: #0099d8;
-  box-shadow: 0 0 0 3px rgba(255,165,0,0.2);
+  box-shadow: 0 0 0 3px rgba(0, 153, 216, 0.28);
   transform: scale(1.02);
 }
 
@@ -1055,7 +1060,7 @@ body {
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #0099d8, #33b4e6);
+  background: linear-gradient(135deg, #006a9a, #0099d8);
   color: #fff;
   box-shadow: 0 8px 25px rgba(0,153,216,0.4);
 }
@@ -1108,6 +1113,7 @@ body {
   background: var(--bg-footer);
   padding: 60px 20px 30px;
   border-top: 3px solid #0099d8;
+  isolation: isolate;
 }
 
 .footer-content {
@@ -1120,14 +1126,14 @@ body {
 }
 
 .footer h3 {
-  color: var(--heading);
+  color: #fff;
   font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: 900;
 }
 
 .footer p, .footer a {
-  color: #555555;
+  color: #d7eef8;
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
@@ -1135,11 +1141,11 @@ body {
 }
 
 .footer a:hover {
-  color: #006a9a;
+  color: #fff;
 }
 
 .footer-tagline {
-  color: var(--heading);
+  color: #fff;
   font-style: italic;
   font-weight: 600;
 }
@@ -1148,10 +1154,9 @@ body {
   display: inline-flex;
   align-items: center;
   margin-top: 12px;
-  padding: 8px 12px;
-  background: var(--brand-dark);
+  padding: 0;
+  background: transparent;
   border-radius: 8px;
-  isolation: isolate;
 }
 
 .footer-desite img {
@@ -1164,8 +1169,8 @@ body {
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
-  border-top: 1px solid #333;
-  color: #555555;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: #b3d7ea;
   font-size: 0.9rem;
 }
 
@@ -1222,14 +1227,22 @@ body {
 .spec-group h3,
 .product-pricing h2,
 .section-title,
-.feature-card h3,
-.footer h3 {
+.feature-card h3 {
   color: var(--heading) !important;
+}
+
+.footer h3,
+.footer-tagline {
+  color: #fff !important;
 }
 
 .hero h1,
 .lead-hero h1 {
   color: #fff !important;
+}
+
+.html-content a:not([class]) {
+  color: var(--brand-dark) !important;
 }
 
 .ps-problem .ps-title {
@@ -1812,12 +1825,12 @@ img[data-image-loaded="true"] {
   justify-content: center;
   padding: 12px 0 20px;
   margin-bottom: 24px;
-  background: linear-gradient(to bottom, rgba(239, 232, 220, 0.98), rgba(239, 232, 220, 0.94));
+  background: linear-gradient(to bottom, rgba(232, 244, 251, 0.98), rgba(232, 244, 251, 0.94));
 }
 
 .mesh-nav a {
-  color: #111;
-  background: #0099d8;
+  color: #fff;
+  background: #006a9a;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
@@ -2112,7 +2125,7 @@ img[data-image-loaded="true"] {
 }
 
 .phrase-picker.is-locked {
-  border-color: rgba(255, 165, 0, 0.55);
+  border-color: rgba(0, 153, 216, 0.55);
   background: rgba(0, 153, 216, 0.1);
 }
 
@@ -2140,7 +2153,7 @@ img[data-image-loaded="true"] {
 
 .phrase-change-btn {
   background: transparent;
-  border: 1px solid rgba(255, 165, 0, 0.5);
+  border: 1px solid rgba(0, 153, 216, 0.5);
   color: #006a9a;
   border-radius: 6px;
   padding: 3px 10px;
