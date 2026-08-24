@@ -1,0 +1,269 @@
+/** Auto-generated from public/images/idm-catalog/manifest.json — re-run scrape-idm-galleries.mjs to refresh. */
+export default [
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/01-SLG-108-in-action-5.webp",
+    "alt": "SLG-108VFRB — SLG 108 in action 5",
+    "source": "https://idmcabc.com/wp-content/uploads/2025/10/SLG-108-in-action-5.webp",
+    "bytes": 121188
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/02-SLG-108-in-action-3.webp",
+    "alt": "SLG-108VFRB — SLG 108 in action 3",
+    "source": "https://idmcabc.com/wp-content/uploads/2025/10/SLG-108-in-action-3.webp",
+    "bytes": 151630
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/03-SLG-108-in-action-4.webp",
+    "alt": "SLG-108VFRB — SLG 108 in action 4",
+    "source": "https://idmcabc.com/wp-content/uploads/2025/10/SLG-108-in-action-4.webp",
+    "bytes": 101408
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/04-SLG-108-in-action-2.webp",
+    "alt": "SLG-108VFRB — SLG 108 in action 2",
+    "source": "https://idmcabc.com/wp-content/uploads/2025/10/SLG-108-in-action-2.webp",
+    "bytes": 94978
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/05-SLG-108-in-action-1.webp",
+    "alt": "SLG-108VFRB — SLG 108 in action 1",
+    "source": "https://idmcabc.com/wp-content/uploads/2025/10/SLG-108-in-action-1.webp",
+    "bytes": 184790
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/06-108VFRB-in-action-gallery-1.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 1",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-1.webp",
+    "bytes": 111528
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/07-108VFRB-in-action-gallery-2.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 2",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-2.webp",
+    "bytes": 128076
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/08-108VFRB-in-action-gallery-3.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 3",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-3.webp",
+    "bytes": 113546
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/09-108VFRB-in-action-gallery-4.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 4",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-4.webp",
+    "bytes": 131892
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/10-108VFRB-in-action-gallery-5.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 5",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-5.webp",
+    "bytes": 157506
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/11-108VFRB-in-action-gallery-6.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 6",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-6.webp",
+    "bytes": 115726
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/12-108VFRB-in-action-gallery-7.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 7",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-7.webp",
+    "bytes": 95002
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/13-108VFRB-in-action-gallery-8.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 8",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-8.webp",
+    "bytes": 167916
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/14-108VFRB-in-action-gallery-9.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 9",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-9.webp",
+    "bytes": 108712
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/15-108VFRB-in-action-gallery-10.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 10",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-10.webp",
+    "bytes": 129912
+  },
+  {
+    "modelId": "slg-108vfrb",
+    "file": "/images/idm-catalog/slg-108vfrb/16-108VFRB-in-action-gallery-11.webp",
+    "alt": "SLG-108VFRB — 108VFRB in action gallery 11",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/108VFRB-in-action-gallery-11.webp",
+    "bytes": 80420
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/01-78VFRB-in-action-gallery-1.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 1",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-1.webp",
+    "bytes": 136388
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/02-78VFRB-in-action-gallery-2.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 2",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-2.webp",
+    "bytes": 150574
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/03-78VFRB-in-action-gallery-3.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 3",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-3.webp",
+    "bytes": 72278
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/04-78VFRB-in-action-gallery-4.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 4",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-4.webp",
+    "bytes": 82922
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/05-78VFRB-in-action-gallery-5.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 5",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-5.webp",
+    "bytes": 187228
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/06-78VFRB-in-action-gallery-6.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 6",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-6.webp",
+    "bytes": 187648
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/07-78VFRB-in-action-gallery-7.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 7",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-7.webp",
+    "bytes": 167340
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/08-78VFRB-in-action-gallery-8.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 8",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-8.webp",
+    "bytes": 125122
+  },
+  {
+    "modelId": "slg-78vf",
+    "file": "/images/idm-catalog/slg-78vf/09-78VFRB-in-action-gallery-9.webp",
+    "alt": "SLG-78VF — 78VFRB in action gallery 9",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/78VFRB-in-action-gallery-9.webp",
+    "bytes": 171182
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/01-68VFRB-in-action-gallery-1.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 1",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-1.webp",
+    "bytes": 139436
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/02-68VFRB-in-action-gallery-2.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 2",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-2.webp",
+    "bytes": 122510
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/03-68VFRB-in-action-gallery-3.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 3",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-3.webp",
+    "bytes": 74628
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/04-68VFRB-in-action-gallery-4.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 4",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-4.webp",
+    "bytes": 124116
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/05-68VFRB-in-action-gallery-5.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 5",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-5.webp",
+    "bytes": 87434
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/06-68VFRB-in-action-gallery-6.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 6",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-6.webp",
+    "bytes": 92082
+  },
+  {
+    "modelId": "slg-68v",
+    "file": "/images/idm-catalog/slg-68v/07-68VFRB-in-action-gallery-7.webp",
+    "alt": "SLG-68V — 68VFRB in action gallery 7",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/68VFRB-in-action-gallery-7.webp",
+    "bytes": 121374
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/01-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-1.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 1",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-1.webp",
+    "bytes": 131080
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/02-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-2.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 2",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-2.webp",
+    "bytes": 125156
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/03-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-3.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 3",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-3.webp",
+    "bytes": 145664
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/04-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-4.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 4",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-4.webp",
+    "bytes": 123640
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/05-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-5.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 5",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-5.webp",
+    "bytes": 125806
+  },
+  {
+    "modelId": "static-grizzly",
+    "file": "/images/idm-catalog/static-grizzly/06-SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-6.webp",
+    "alt": "Static Grizzly — SLG 78 STATIC Grizzly Screener in action Gallery 6",
+    "source": "https://idmcabc.com/wp-content/uploads/2024/08/SLG-78-STATIC-Grizzly-Screener-in-action-Gallery-6.webp",
+    "bytes": 126324
+  }
+]

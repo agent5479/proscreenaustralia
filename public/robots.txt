@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Keep internal drafts and archive content out of search results
+Disallow: /idm/
+Disallow: /legacy/
+Disallow: /drafts/
+
+Sitemap: https://agent5479.github.io/proscreenaustralia/sitemap.xml
