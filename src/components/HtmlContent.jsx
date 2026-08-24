@@ -178,6 +178,233 @@ function bindHeroVideo(root) {
   }
 }
 
+function setEquipmentOpen(card, open) {
+  const details = card.querySelector('.equipment-details')
+  const btn = card.querySelector('.equipment-toggle')
+  card.classList.toggle('is-open', open)
+  if (details) details.hidden = !open
+  if (btn) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false')
+    btn.textContent = open ? 'Show less' : 'More details'
+  }
+}
+
+function bindEquipmentCards(root) {
+  root.querySelectorAll('.equipment-card').forEach((card) => {
+    const content = card.querySelector('.equipment-content')
+    if (!content || content.querySelector('.equipment-toggle')) return
+
+    const summary = content.querySelector(':scope > p')
+    if (!summary) return
+
+    const detailNodes = []
+    let pastSummary = false
+    ;[...content.children].forEach((child) => {
+      if (child === summary) {
+        pastSummary = true
+        return
+      }
+      if (pastSummary) detailNodes.push(child)
+    })
+    if (!detailNodes.length) return
+
+    const details = document.createElement('div')
+    details.className = 'equipment-details'
+    details.hidden = true
+    detailNodes.forEach((node) => details.appendChild(node))
+
+    const toggle = document.createElement('button')
+    toggle.type = 'button'
+    toggle.className = 'equipment-toggle'
+    toggle.setAttribute('aria-expanded', 'false')
+    toggle.textContent = 'More details'
+
+    summary.after(toggle)
+    toggle.after(details)
+    card.classList.add('is-collapsible')
+  })
+
+  const onClick = (event) => {
+    const toggle = event.target.closest('.equipment-toggle')
+    if (toggle && root.contains(toggle)) {
+      event.preventDefault()
+      const card = toggle.closest('.equipment-card')
+      if (!card) return
+      setEquipmentOpen(card, !card.classList.contains('is-open'))
+      return
+    }
+
+    const mediaLink = event.target.closest('.equipment-card > a')
+    if (mediaLink && root.contains(mediaLink)) {
+      const card = mediaLink.closest('.equipment-card')
+      if (card?.classList.contains('is-collapsible') && !card.classList.contains('is-open')) {
+        event.preventDefault()
+        setEquipmentOpen(card, true)
+      }
+    }
+  }
+
+  root.addEventListener('click', onClick)
+  return () => root.removeEventListener('click', onClick)
+}
+
+function bindIgStories(root) {
+  const rail = root.querySelector('.ig-stories-rail')
+  if (!rail) return () => {}
+
+  const stories = [...rail.querySelectorAll('.ig-story')]
+  if (!stories.length) return () => {}
+
+  let viewer = root.querySelector('.ig-story-viewer')
+  if (!viewer) {
+    viewer = document.createElement('div')
+    viewer.className = 'ig-story-viewer'
+    viewer.hidden = true
+    viewer.innerHTML = `
+      <div class="ig-story-viewer-frame" role="dialog" aria-modal="true" aria-label="Equipment story">
+        <div class="ig-story-progress" aria-hidden="true"></div>
+        <header class="ig-story-viewer-head">
+          <div class="ig-story-viewer-identity">
+            <img class="ig-story-viewer-avatar" alt="" />
+            <div>
+              <strong class="ig-story-viewer-title"></strong>
+              <span class="ig-story-viewer-handle">@proscreen_australia</span>
+            </div>
+          </div>
+          <button type="button" class="ig-story-close" aria-label="Close story">×</button>
+        </header>
+        <img class="ig-story-viewer-image" alt="" />
+        <p class="ig-story-viewer-caption"></p>
+        <a class="ig-story-viewer-cta" href="${contact.instagramUrl}" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+        <button type="button" class="ig-story-nav ig-story-nav-prev" aria-label="Previous story"></button>
+        <button type="button" class="ig-story-nav ig-story-nav-next" aria-label="Next story"></button>
+      </div>
+    `
+    root.appendChild(viewer)
+  }
+
+  const progress = viewer.querySelector('.ig-story-progress')
+  const avatar = viewer.querySelector('.ig-story-viewer-avatar')
+  const titleEl = viewer.querySelector('.ig-story-viewer-title')
+  const imageEl = viewer.querySelector('.ig-story-viewer-image')
+  const captionEl = viewer.querySelector('.ig-story-viewer-caption')
+  const closeBtn = viewer.querySelector('.ig-story-close')
+  const prevBtn = viewer.querySelector('.ig-story-nav-prev')
+  const nextBtn = viewer.querySelector('.ig-story-nav-next')
+
+  let index = 0
+  let timer = null
+  let reduced = prefersReducedMotion()
+
+  const clearTimer = () => {
+    if (timer) {
+      clearTimeout(timer)
+      timer = null
+    }
+  }
+
+  const markSeen = (i) => {
+    stories[i]?.classList.add('is-seen')
+  }
+
+  const renderProgress = () => {
+    progress.innerHTML = stories
+      .map(
+        (_, i) =>
+          `<span class="ig-story-progress-seg${i < index ? ' is-done' : ''}${i === index ? ' is-active' : ''}"><i></i></span>`,
+      )
+      .join('')
+  }
+
+  const closeViewer = () => {
+    clearTimer()
+    viewer.hidden = true
+    document.body.classList.remove('ig-story-open')
+  }
+
+  const showStory = (nextIndex) => {
+    if (nextIndex < 0) {
+      closeViewer()
+      return
+    }
+    if (nextIndex >= stories.length) {
+      closeViewer()
+      return
+    }
+
+    index = nextIndex
+    const story = stories[index]
+    const src = story.dataset.igSrc || story.querySelector('img')?.getAttribute('src') || ''
+    const title = story.dataset.igTitle || story.querySelector('.ig-story-label')?.textContent || ''
+    const caption = story.dataset.igCaption || ''
+
+    avatar.src = src
+    imageEl.src = src
+    imageEl.alt = title
+    titleEl.textContent = title
+    captionEl.textContent = caption
+    markSeen(index)
+    renderProgress()
+    viewer.hidden = false
+    document.body.classList.add('ig-story-open')
+
+    clearTimer()
+    if (!reduced) {
+      timer = window.setTimeout(() => showStory(index + 1), 5200)
+    }
+  }
+
+  const onRailClick = (event) => {
+    const story = event.target.closest('.ig-story')
+    if (!story || !rail.contains(story)) return
+    event.preventDefault()
+    showStory(stories.indexOf(story))
+  }
+
+  const onViewerClick = (event) => {
+    if (event.target === viewer) {
+      closeViewer()
+      return
+    }
+    if (event.target.closest('.ig-story-close')) {
+      event.preventDefault()
+      closeViewer()
+      return
+    }
+    if (event.target.closest('.ig-story-nav-prev')) {
+      event.preventDefault()
+      showStory(index - 1)
+      return
+    }
+    if (event.target.closest('.ig-story-nav-next')) {
+      event.preventDefault()
+      showStory(index + 1)
+    }
+  }
+
+  const onKey = (event) => {
+    if (viewer.hidden) return
+    if (event.key === 'Escape') closeViewer()
+    if (event.key === 'ArrowRight') showStory(index + 1)
+    if (event.key === 'ArrowLeft') showStory(index - 1)
+  }
+
+  rail.addEventListener('click', onRailClick)
+  viewer.addEventListener('click', onViewerClick)
+  closeBtn?.addEventListener('click', closeViewer)
+  prevBtn?.addEventListener('click', () => showStory(index - 1))
+  nextBtn?.addEventListener('click', () => showStory(index + 1))
+  document.addEventListener('keydown', onKey)
+
+  return () => {
+    clearTimer()
+    document.body.classList.remove('ig-story-open')
+    rail.removeEventListener('click', onRailClick)
+    viewer.removeEventListener('click', onViewerClick)
+    document.removeEventListener('keydown', onKey)
+  }
+}
+
 /**
  * Renders migrated HTML content and routes internal links through React Router.
  */
@@ -281,12 +508,16 @@ export default function HtmlContent({ html }) {
 
     const unbindCalculator = bindProfitCalculator(root)
     const unbindHeroVideo = bindHeroVideo(root)
+    const unbindEquipmentCards = bindEquipmentCards(root)
+    const unbindIgStories = bindIgStories(root)
 
     root.addEventListener('click', onClick)
     root.addEventListener('click', onExpandClick)
     return () => {
       unbindCalculator()
       unbindHeroVideo()
+      unbindEquipmentCards()
+      unbindIgStories()
       root.removeEventListener('click', onClick)
       root.removeEventListener('click', onExpandClick)
     }
