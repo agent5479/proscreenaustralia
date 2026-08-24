@@ -33,18 +33,18 @@ Push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.ym
 2. `npm run build`
 3. Deploy `dist/` to GitHub Pages (site root, `base: '/'`)
 
-Custom domain: `https://agent5479.github.io/proscreenaustralia`
+Custom domain: `https://proscreenaustralia.com.au` (`public/CNAME`)
 
 ## Contact
 
 Phone: **+61 433 045 045**  
-WhatsApp: info@agent5479.github.io/proscreenaustralia  
+WhatsApp: https://wa.me/61433045045  
 Showroom: Australia-wide — call Rob to view machines in your area
 
 ## Project layout
 
 - `src/` — React app (components, pages, SEO data, styles)
-- `public/` — favicon, robots, sitemap, images, `.nojekyll`
+- `public/` — favicon, robots, sitemap, CNAME, images, `.nojekyll`
 - `site/` — previous static HTML (reference; not deployed)
 - `legacy/` — drafts / unused assets (not deployed)
 - `docs/` — additional notes ([DEPLOYMENT.md](./DEPLOYMENT.md), [SEO-FOLLOW-UPS.md](./SEO-FOLLOW-UPS.md))

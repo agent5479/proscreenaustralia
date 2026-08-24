@@ -6,4 +6,4 @@ Disallow: /idm/
 Disallow: /legacy/
 Disallow: /drafts/
 
-Sitemap: https://agent5479.github.io/proscreenaustralia/sitemap.xml
+Sitemap: https://proscreenaustralia.com.au/sitemap.xml

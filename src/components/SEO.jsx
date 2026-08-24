@@ -23,7 +23,7 @@ export default function SEO({ pathname, jsonLd }) {
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-      <meta name="theme-color" content="#0099d8" />
+      <meta name="theme-color" content="#006a9a" />
 
       <meta name="geo.region" content="AU" />
       <meta name="geo.placename" content="Australia" />

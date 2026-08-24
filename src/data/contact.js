@@ -5,9 +5,9 @@ export const contact = {
   whatsappHref: 'https://wa.me/61433045045',
   instagramUrl: 'https://www.instagram.com/proscreen_australia/',
   instagramHandle: '@proscreen_australia',
-  siteUrl: 'https://agent5479.github.io/proscreenaustralia',
-  /** Project Pages path (no trailing slash). Empty string if a custom domain is added later. */
-  basePath: '/proscreenaustralia',
+  siteUrl: 'https://proscreenaustralia.com.au',
+  /** Empty on custom domain (site served at domain root). Use '/proscreenaustralia' only for project Pages without CNAME. */
+  basePath: '',
   locationLine: 'Australia-wide supply — call Rob to view machines in your area',
   contactName: 'Rob',
 }

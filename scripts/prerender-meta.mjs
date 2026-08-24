@@ -68,7 +68,7 @@ function injectMeta(html, route, { bodyHtml } = {}) {
     <meta name="twitter:description" content="${escapeAttr(route.description)}" />
     <meta name="twitter:image" content="${escapeAttr(ogImage)}" />
     <meta name="contact:phone_number" content="${escapeAttr(contact.phoneDisplay)}" />
-    <meta name="theme-color" content="#0099d8" />
+    <meta name="theme-color" content="#006a9a" />
     ${jsonLd}
   `
 
