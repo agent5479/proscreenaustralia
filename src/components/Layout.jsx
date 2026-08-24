@@ -5,12 +5,11 @@ import SEO from './SEO'
 
 export default function Layout() {
   const location = useLocation()
-  const showTagline = location.pathname === '/'
 
   return (
     <>
       <SEO pathname={location.pathname} />
-      <Nav showTagline={showTagline} />
+      <Nav />
       <Outlet />
       <Footer />
     </>

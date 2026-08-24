@@ -65,5 +65,5 @@ export function getStaticPageHtml(pathname) {
 
   if (!body) return null
 
-  return buildStaticChrome(body, { showTagline: pathname === '/' })
+  return buildStaticChrome(body)
 }

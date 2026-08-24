@@ -64,6 +64,20 @@ export default function Nav({ showTagline = false }) {
           <Link to="/photos">Photos</Link>
           <Link to="/videos">Videos</Link>
           <Link to="/contact">Contact</Link>
+          <a href={phoneHref} className="nav-menu-cta">
+            Call Rob {contact.phoneDisplay}
+          </a>
+          <a href={whatsappHref} className="nav-menu-cta" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
+          <a
+            href={contact.instagramUrl}
+            className="nav-menu-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </div>
         <div className="nav-contact">
           <a href={phoneHref} className="nav-phone">
