@@ -20,10 +20,12 @@ export default function SEO({ pathname, jsonLd }) {
         content={seo.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}
       />
       <link rel="canonical" href={seo.canonical} />
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="icon" href="/favicon.ico?v=desite" sizes="any" />
+      <link rel="icon" href="/favicon-48.png?v=desite" type="image/png" sizes="48x48" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=desite" />
       <meta name="theme-color" content="#006a9a" />
+      <meta name="msapplication-TileColor" content="#006a9a" />
+      <meta name="msapplication-TileImage" content="/site-logo.png?v=desite" />
 
       <meta name="geo.region" content="AU" />
       <meta name="geo.placename" content="Australia" />
@@ -35,12 +37,14 @@ export default function SEO({ pathname, jsonLd }) {
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={seo.canonical} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:alt" content="DeSite Products — supplied in Australia by Pro Screen Australia" />
       <meta property="og:locale" content="en_AU" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image:alt" content="DeSite Products — supplied in Australia by Pro Screen Australia" />
 
       <meta name="contact:phone_number" content={contact.phoneDisplay} />
 

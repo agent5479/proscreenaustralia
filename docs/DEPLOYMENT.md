@@ -68,7 +68,7 @@ Full tick-list for future review: **[SEO-FOLLOW-UPS.md](./SEO-FOLLOW-UPS.md)**.
 
 ### Google Business Profile (GBP)
 
-1. Match NAP to the site: **Pro Screen Australia**, Australia-wide — call Rob to view machines in your area, phone **+61 433 045 045**, website `https://proscreenaustralia.com.au`.
+1. Match NAP to the site: **Pro Screen Australia**, based **Sydney** (Australia-wide supply), phone **+61 433 045 045**, website `https://proscreenaustralia.com.au`.
 2. Hours: Monday–Friday 08:00–17:00 (aligned with schema).
 3. Categories/services mirror site use cases: soil/gravel/aggregate screeners, static grizzly, telehandler bins, farm/cow-race screening, civil on-site screening, topsoil/landscaping, showroom viewing.
 4. Encourage reviews that name specific services, materials, and towns; reuse that language on `/for/*` pages (do not invent reviews).
@@ -87,9 +87,18 @@ Full tick-list for future review: **[SEO-FOLLOW-UPS.md](./SEO-FOLLOW-UPS.md)**.
 3. One owned direct channel (email list for stock/quotes) so traffic is not 100% search-dependent.
 4. Keep the brand string **Pro Screen Australia** consistent in titles, GBP, and social bios.
 
+## Contact form (Google Apps Script)
+
+Production builds inject the Apps Script web app URL from GitHub Actions:
+
+- Secret name: `VITE_CONTACT_FORM_URL` (the deployed `/exec` URL)
+- Local dev: copy `.env.example` → `.env.local` with the same variable
+
+Setup steps: [`google-apps-script/README.md`](../google-apps-script/README.md). The inbox address (`proscreenaus@gmail.com`) lives only in Apps Script — never in this repo.
+
 ## Notes
 
 - `site/` is legacy static HTML and is **not** what Pages deploys anymore.
 - Do not re-enable workflows that sync files into `site/` for publishing.
 - Prerender injects static nav/body/footer into `#root` for crawlers; React replaces `#root` on load for interactive users.
-- Favicon / JSON-LD logo: DeSite gear on DeSite blue (`public/favicon.ico`, `favicon-48.png`, `apple-touch-icon.png`, `site-logo.png`). Regenerate with `python scripts/make-favicon.py` if the source mark changes.
+- Favicon / JSON-LD logo / default OG share image: DeSite mark from `public/images/desite-logo.png` → `favicon.ico`, `favicon-48.png`, `apple-touch-icon.png`, `site-logo.png`, `og-desite.png`. Regenerate with `python scripts/make-favicon.py` (also updates `site/`).

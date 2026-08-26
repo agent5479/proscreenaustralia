@@ -2808,6 +2808,98 @@ img[data-image-loaded="true"] {
   margin-bottom: 10px;
 }
 
+/* Contact form (/contact) */
+.contact-form-section {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  padding-top: 0;
+}
+
+.contact-form {
+  background: rgba(0, 153, 216, 0.08);
+  border: 1px solid rgba(0, 153, 216, 0.28);
+  border-radius: 12px;
+  padding: 24px 22px;
+}
+
+.contact-form h2 {
+  color: var(--heading);
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.contact-form-intro {
+  color: #2c2c2c;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.contact-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #006a9a;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-form-span {
+  grid-column: 1 / -1;
+}
+
+.contact-form-grid input,
+.contact-form-grid textarea {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 153, 216, 0.45);
+  border-radius: 8px;
+  color: #1a1a1a;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.contact-form-grid textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form-actions {
+  margin-top: 16px;
+}
+
+.contact-form-status {
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+.contact-form-status--success {
+  color: #006a9a;
+  font-weight: 600;
+}
+
+.contact-form-status--error {
+  color: #b42318;
+}
+
+.contact-form-status--warn {
+  color: #555555;
+  font-size: 0.95rem;
+}
+
 .prospects-count {
   color: #555555;
   margin-bottom: 10px;

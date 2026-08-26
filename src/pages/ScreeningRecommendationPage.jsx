@@ -108,7 +108,7 @@ export default function ScreeningRecommendationPage() {
         <h2>Need help picking a mesh?</h2>
         <p>
           Tell us what you are screening and which machine you run — we will recommend openings that
-          match your target product size. Australia-wide supply — call Rob to view machines in your area.
+          Based in Sydney — supply Australia-wide. Call Rob to match mesh to your material and carrier.
         </p>
         <div className="cta-buttons">
           <a href={phoneHref} className="cta-primary">

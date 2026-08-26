@@ -12,7 +12,7 @@ export const forNelsonNationwideHtml = `<!-- View machines in your area -->
   </div>
 
   <div class="lead-body">
-    <p class="lead-intro">Pro Screen Australia supplies DeSite equipment across the country. We do not list a public street address — call Rob and we will set up a viewing in your area.</p>
+    <p class="lead-intro">Pro Screen Australia is based in Sydney and supplies DeSite equipment across the country. We do not list a public street address — call Rob and we will set up a viewing in your area.</p>
 
     <div class="lead-split">
       <img src="/images/SLG108VFRB.jpg" alt="DeSite screening equipment available to view in your area">

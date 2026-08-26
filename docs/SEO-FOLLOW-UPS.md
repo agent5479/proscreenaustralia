@@ -38,7 +38,7 @@ Most engineering items are **already implemented** in this repo. Source of truth
 ### Optional later engineering
 
 - [ ] Progressive enhancement for the home profit calculator (static defaults already in HTML)
-- [ ] Consider email capture / quote form on contact or viewing page when ready for a mailing list
+- [x] Contact / quote form on `/contact` (Google Apps Script → Rob’s Gmail; URL via `VITE_CONTACT_FORM_URL` secret)
 - [ ] Add `GeoCoordinates` to `LocalBusiness` only if GBP gains a stable public address worth mirroring
 - [ ] Add owned YouTube (or other) URL to `sameAs` in `organizationJsonLd` when a Pro Screen Australia channel exists
 

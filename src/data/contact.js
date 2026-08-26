@@ -8,13 +8,13 @@ export const contact = {
   siteUrl: 'https://proscreenaustralia.com.au',
   /** Empty on custom domain (site served at domain root). Use '/proscreenaustralia' only for project Pages without CNAME. */
   basePath: '',
-  locationLine: 'Australia-wide supply — call Rob to view machines in your area',
+  locationLine: 'Based in Sydney — supply Australia-wide. Call Rob to view machines in your area',
   contactName: 'Rob',
 }
 
 export const phoneHref = `tel:${contact.phoneTel}`
 export const whatsappHref = contact.whatsappHref
-/** No public email — WhatsApp is the written-contact path. */
+/** Public written contact is WhatsApp or the contact form (email not published). */
 export const emailHref = contact.whatsappHref
 
 export function withBase(path) {

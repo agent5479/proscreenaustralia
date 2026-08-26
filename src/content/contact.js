@@ -4,7 +4,7 @@ export const contactHtml = `<!-- Page Content -->
 
   <div class="product-description" style="margin-bottom: 40px; text-align: center;">
     <p style="font-size: 1.3rem; color: #006a9a; margin-bottom: 30px;">Call Rob to match a DeSite machine to the work you are doing</p>
-    <p style="font-size: 1.1rem; color: #2c2c2c;">Phone, WhatsApp or Instagram — we do not publish an email address. Tell us what you are screening and which carrier you run.</p>
+    <p style="font-size: 1.1rem; color: #2c2c2c;">Based in Sydney — supply Australia-wide. Phone, WhatsApp, Instagram, or the form below. Tell us what you are screening and which carrier you run.</p>
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-bottom: 60px;">
@@ -34,8 +34,8 @@ export const contactHtml = `<!-- Page Content -->
 
     <div class="product-description">
       <h2 style="color: #006a9a; margin-bottom: 20px;">Viewing</h2>
-      <p style="font-size: 1.2rem; color: #006a9a; font-weight: 700; margin-bottom: 10px;">Australia-wide</p>
-      <p style="color: #2c2c2c;">Call Rob to view machines in your area. No public street showroom — we arrange a viewing near you.</p>
+      <p style="font-size: 1.2rem; color: #006a9a; font-weight: 700; margin-bottom: 10px;">Sydney-based — Australia-wide</p>
+      <p style="color: #2c2c2c;">No public street showroom. Call Rob to arrange a viewing near you.</p>
     </div>
   </div>
 

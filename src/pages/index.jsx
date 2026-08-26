@@ -1,4 +1,5 @@
 import HtmlContent from '../components/HtmlContent'
+import ContactForm from '../components/ContactForm'
 import { homeHtml } from '../content/home'
 import { contactHtml } from '../content/contact'
 import { photosHtml } from '../content/photos'
@@ -33,7 +34,15 @@ function Page({ html }) {
 
 export { AboutPage }
 export const HomePage = () => <Page html={homeHtml} />
-export const ContactPage = () => <Page html={contactHtml} />
+
+export const ContactPage = () => (
+  <>
+    <HtmlContent html={contactHtml} />
+    <section className="page-content contact-form-section">
+      <ContactForm />
+    </section>
+  </>
+)
 export const PhotosPage = () => <Page html={photosHtml} />
 export const VideosPage = () => <Page html={videosHtml} />
 export const Slg108Page = () => <Page html={slg108Html} />

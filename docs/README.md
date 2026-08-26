@@ -39,7 +39,9 @@ Custom domain: `https://proscreenaustralia.com.au` (`public/CNAME`)
 
 Phone: **+61 433 045 045**  
 WhatsApp: https://wa.me/61433045045  
-Showroom: Australia-wide — call Rob to view machines in your area
+Based in **Sydney** — supply Australia-wide. Call Rob to view machines in your area.
+
+Contact form backend: [`google-apps-script/README.md`](../google-apps-script/README.md) — deploy Apps Script, then set GitHub secret `VITE_CONTACT_FORM_URL`.
 
 ## Project layout
 

@@ -1,7 +1,7 @@
 import { contact } from './contact.js'
 
 const siteName = 'Pro Screen Australia'
-const defaultOgImage = `${contact.siteUrl}/images/SLG108VFRB.jpg`
+const defaultOgImage = `${contact.siteUrl}/og-desite.png`
 
 export const routes = [
   {
@@ -473,6 +473,8 @@ export const organizationJsonLd = {
     'Australian supplier of DeSite soil, gravel and aggregate screening machines and related earthmoving equipment.',
   address: {
     '@type': 'PostalAddress',
+    addressLocality: 'Sydney',
+    addressRegion: 'NSW',
     addressCountry: 'AU',
   },
   areaServed: {

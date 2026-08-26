@@ -50,9 +50,9 @@ function injectMeta(html, route, { bodyHtml } = {}) {
     <meta name="creator" content="Warwick Marshall" />
     <meta name="robots" content="${escapeAttr(route.robots || defaultRobots)}" />
     ${canonicalTag}
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico?v=desite" sizes="any" />
+    <link rel="icon" href="/favicon-48.png?v=desite" type="image/png" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=desite" />
     <meta name="geo.region" content="AU" />
     <meta name="geo.placename" content="Australia" />
     <meta name="language" content="en-AU" />
@@ -62,13 +62,17 @@ function injectMeta(html, route, { bodyHtml } = {}) {
     <meta property="og:description" content="${escapeAttr(route.description)}" />
     ${ogUrlTag}
     <meta property="og:image" content="${escapeAttr(ogImage)}" />
+    <meta property="og:image:alt" content="DeSite Products — supplied in Australia by Pro Screen Australia" />
     <meta property="og:locale" content="en_AU" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeAttr(route.title)}" />
     <meta name="twitter:description" content="${escapeAttr(route.description)}" />
     <meta name="twitter:image" content="${escapeAttr(ogImage)}" />
+    <meta name="twitter:image:alt" content="DeSite Products — supplied in Australia by Pro Screen Australia" />
     <meta name="contact:phone_number" content="${escapeAttr(contact.phoneDisplay)}" />
     <meta name="theme-color" content="#006a9a" />
+    <meta name="msapplication-TileColor" content="#006a9a" />
+    <meta name="msapplication-TileImage" content="/site-logo.png?v=desite" />
     ${jsonLd}
   `
 
