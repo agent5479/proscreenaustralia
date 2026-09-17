@@ -32,6 +32,7 @@ Most engineering items are **already implemented** in this repo. Source of truth
 | JSON-LD entity graph | Done | Home: `WebSite` + `LocalBusiness` (`@graph`); products: `Product`; `/for/*`: `Service`; mesh guide: `WebPage` + `ItemList`. |
 | `lang="en-AU"` | Done | `index.html` + prerendered HTML. |
 | Internal / draft routes noindex | Done | `/idm/*`, redirects, legacy paths excluded from sitemap. |
+| Bing IndexNow | Done | Key at `/{key}.txt`; post-deploy job submits sitemap URLs to `api.indexnow.org`. |
 | GeoCoordinates in schema | N/A | Australia-wide mobile supply — no fixed storefront lat/long. Add only if GBP gets a permanent public address. |
 | Full SSR for interactive tools | Partial | Home profit calculator: static explanatory defaults in HTML; interactive calc remains JS-only by design. |
 
@@ -63,6 +64,8 @@ Most engineering items are **already implemented** in this repo. Source of truth
 - [ ] Validate Rich Results / schema on home (`WebSite` + `LocalBusiness`), one product (`Product`), and one `/for/` page (`Service`)
 - [ ] After deploy, view-source (no JS) a product URL and confirm `<h1>` + body copy are present in HTML
 - [ ] Confirm favicon shows in browser tab and (over time) in Google results for the brand
+- [ ] Confirm `https://proscreenaustralia.com.au/3481b2c71f3849bd9d53fd46b812c1c4.txt` returns the IndexNow key
+- [ ] After the first IndexNow deploy job, verify in Bing Webmaster Tools that URLs were received
 
 ---
 

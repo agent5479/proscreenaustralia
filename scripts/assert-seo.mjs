@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { routes, isIndexableRoute, notFoundSeo } from '../src/data/seo.js'
 import { contact } from '../src/data/contact.js'
+import { indexNowKey, indexNowKeyFile } from '../src/data/indexnow.js'
 
 const distDir = path.resolve('dist')
 const publicDir = path.resolve('public')
@@ -61,6 +62,15 @@ for (const route of routes) {
 
 if (!sitemap.includes('<lastmod>')) {
   fail('Sitemap missing lastmod')
+}
+
+const indexNowPublic = read(path.join(publicDir, indexNowKeyFile)).trim()
+const indexNowDist = read(path.join(distDir, indexNowKeyFile)).trim()
+if (indexNowPublic !== indexNowKey) {
+  fail(`public/${indexNowKeyFile} must contain the IndexNow key`)
+}
+if (indexNowDist !== indexNowKey) {
+  fail(`dist/${indexNowKeyFile} must contain the IndexNow key`)
 }
 
 const robotsDist = read(path.join(distDir, 'robots.txt'))

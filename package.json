@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/prerender-meta.mjs && node scripts/assert-seo.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

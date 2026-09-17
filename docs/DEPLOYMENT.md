@@ -24,6 +24,7 @@ The workflow [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) w
 1. Install dependencies (`npm ci`)
 2. Build (`npm run build`) — Vite + SEO meta/body prerender
 3. Upload and deploy the `dist/` artifact
+4. After Pages is live, POST sitemap URLs to IndexNow (Bing and other participating engines)
 
 ## Deploy (manual)
 
@@ -49,6 +50,7 @@ Confirm:
 - **Sitemap:** includes `/for/topsoil-landscaping`, `/for/aggregate-and-road-metal`, `/for/view-in-your-area`
 - **Internal routes:** `dist/idm/**/index.html` keep empty `#root` and `noindex`
 - Canonicals and sitemap use `https://proscreenaustralia.com.au`
+- IndexNow key file is present at `/3481b2c71f3849bd9d53fd46b812c1c4.txt`
 
 ## Custom domain (DNS cutover)
 
@@ -79,6 +81,14 @@ Full tick-list for future review: **[SEO-FOLLOW-UPS.md](./SEO-FOLLOW-UPS.md)**.
 2. Submit/refresh `https://proscreenaustralia.com.au/sitemap.xml`.
 3. Request indexing for key URLs: home, products, `/for/topsoil-landscaping`, `/for/aggregate-and-road-metal`, `/for/view-in-your-area`.
 4. Spot-check Rich Results / schema on home, one product, and one `/for/` page.
+
+### Bing IndexNow
+
+The key file is public by design at `https://proscreenaustralia.com.au/3481b2c71f3849bd9d53fd46b812c1c4.txt`. After each production deploy, GitHub Actions waits for that file then submits all sitemap URLs to `https://api.indexnow.org/indexnow`.
+
+1. Confirm the key URL returns `3481b2c71f3849bd9d53fd46b812c1c4`.
+2. In Bing Webmaster Tools, check URL Inspection / URL Submission that the sitemap URLs were received.
+3. Optional local resubmit after a live deploy: `npm run indexnow`.
 
 ### Brand demand (outside the repo)
 
