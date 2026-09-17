@@ -2,8 +2,8 @@ export const forAggregateRoadMetalHtml = `<!-- Aggregate & road metal lead page 
 <section class="lead-page">
   <div class="lead-hero" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.38), rgba(0,0,0,0.72)), url('/images/grizzly3.jpg');">
     <div class="lead-hero-inner">
-      <h1>Screen gravel, road metal and drainage stone</h1>
-      <p class="lead-hero-sub">On-site aggregate screening in Australia — oversize out, saleable grades in, less haulage both ways.</p>
+      <h1>Compact aggregate screening in Australia</h1>
+      <p class="lead-hero-sub">Portable gravel and road-metal screens for sale — not a full crushing plant. Oversize out, saleable grades in, less haulage both ways.</p>
       <div class="cta-buttons lead-cta">
         <a href="tel:+61433045045" class="cta-primary">Call +61 433 045 045</a>
         <a href="/contact" class="cta-secondary">Contact Us</a>
@@ -12,7 +12,7 @@ export const forAggregateRoadMetalHtml = `<!-- Aggregate & road metal lead page 
   </div>
 
   <div class="lead-body">
-    <p class="lead-intro">Road metal, pea gravel, septic stone, drainage rock and recycled concrete all need a defined product size. Pro Screen Australia supplies DeSite Proscreens and Static Grizzlies so contractors and yards can grade aggregate on the job instead of buying every tonne in.</p>
+    <p class="lead-intro">Road metal, pea gravel, septic stone, drainage rock and recycled concrete all need a defined product size. Pro Screen Australia supplies compact aggregate screening machines — DeSite Proscreens and Static Grizzlies — so contractors and yards can grade on the job instead of buying every tonne in. These are portable screens, not a full crushing and screening plant.</p>
 
     <div class="lead-split">
       <img src="/images/mesh-guide/base-rock-gravel.jpg" alt="Base rock gravel product grade example">

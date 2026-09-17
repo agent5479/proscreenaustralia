@@ -3,6 +3,7 @@ export const skidSteerAttachmentsHtml = `<!-- Product Detail -->
   <div class="product-header">
     <h1>DeSite Skid-Steer Attachments — Mulle Bin, SR-2 &amp; SR-3</h1>
     <p>Mule bin and rippers built to the same DeSite duty as the screener range. Stocked in Australia — call Rob to match the attachment to your skidsteer class.</p>
+    <p style="margin-top:16px;padding:16px 18px;background:rgba(0,153,216,0.12);border-left:4px solid #0099d8;border-radius:8px;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.7;">Looking for a <strong>screen attachment for a skid steer</strong>? That is the <a href="/products/slg-78vf" style="color:#006a9a;font-weight:600;">DeSite SLG-78VF portable soil screener</a> — not the bins and rippers on this page. Mini carriers: see <a href="/products/mini-screeners" style="color:#006a9a;font-weight:600;">mini screeners</a>.</p>
   </div>
 
   <div class="product-gallery">

@@ -2,8 +2,8 @@ export const forTopsoilLandscapingHtml = `<!-- Topsoil & landscaping lead page -
 <section class="lead-page">
   <div class="lead-hero" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.38), rgba(0,0,0,0.72)), url('/images/Proscreen_SLG78VFII_home.jpg');">
     <div class="lead-hero-inner">
-      <h1>On-site topsoil screening for landscapers</h1>
-      <p class="lead-hero-sub">Grade topsoil, compost and yard soil in Australia — cut buy-in and tip fees with mesh matched to the finish you sell.</p>
+      <h1>Topsoil screen and on-site soil screening</h1>
+      <p class="lead-hero-sub">Grade topsoil, compost and yard soil in Australia — a vibratory Proscreen, not a power rock screen. Cut buy-in and tip fees with mesh matched to the finish you sell.</p>
       <div class="cta-buttons lead-cta">
         <a href="tel:+61433045045" class="cta-primary">Call +61 433 045 045</a>
         <a href="/contact" class="cta-secondary">Contact Us</a>
@@ -12,7 +12,7 @@ export const forTopsoilLandscapingHtml = `<!-- Topsoil & landscaping lead page -
   </div>
 
   <div class="lead-body">
-    <p class="lead-intro">Landscapers and material yards that already own dirt do not need to buy every cubic metre of screened topsoil. A portable DeSite Proscreen grades top dressing, commercial triple-mix and compost on the pad or on the job — Australia-wide supply.</p>
+    <p class="lead-intro">Landscapers and material yards that already own dirt do not need to buy every cubic metre of screened topsoil. A portable DeSite Proscreen grades top dressing, commercial triple-mix and compost on the pad or on the job — Australia-wide supply. A high-amplitude rock or power screen is the wrong first tool for fine topsoil; use a grizzly for oversize stone, then a Proscreen for the soil fraction.</p>
 
     <div class="lead-split">
       <img src="/images/mesh-guide/commercial-triple-mix.jpg" alt="Screened commercial topsoil product grade">

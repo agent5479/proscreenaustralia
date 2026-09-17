@@ -1,4 +1,5 @@
 import { contact } from './contact.js'
+import { searchFaqJsonLd } from './searchFaq.js'
 
 const siteName = 'Pro Screen Australia'
 const defaultOgImage = `${contact.siteUrl}/og-desite.png`
@@ -7,11 +8,11 @@ export const routes = [
   {
     path: '/',
     file: 'index.html',
-    title: 'Soil & Gravel Screeners Australia | Pro Screen Australia',
+    title: 'Soil Screener & Screening Equipment | Pro Screen Australia',
     description:
-      'DeSite soil, gravel and aggregate screeners for Australia. Portable vibratory ProScreens from Pro Screen Australia — view machines in your area, nationwide supply.',
+      'Portable soil screeners, dirt screeners and screening machines for Australia. Mini, skid-steer and compact aggregate screens — view in your area.',
     keywords:
-      'soil screener Australia, gravel screener Australia, aggregate screener, topsoil screener Australia, DeSite Australia, vibratory screener, screening equipment Australia, Pro Screen Australia',
+      'soil screener, portable soil screener, dirt screener, screening equipment, screening machine, mini screener, topsoil screen, Pro Screen Australia, Proscreen Australia',
     canonical: `${contact.siteUrl}/`,
     changefreq: 'weekly',
     priority: '1.0',
@@ -85,9 +86,9 @@ export const routes = [
   {
     path: '/products/slg-108vfrb',
     file: 'products/slg-108vfrb/index.html',
-    title: `DeSite SLG-108VFRB Heavy Duty Screener | ${siteName}`,
+    title: `Soil Screener SLG-108VFRB | ${siteName}`,
     description:
-      'DeSite SLG-108VFRB heavy-duty vibratory screener for soil, gravel and aggregate. High-capacity ProScreen supplied across Australia by Pro Screen Australia.',
+      'Heavy-duty soil screener for dirt, gravel and aggregate. DeSite SLG-108VFRB high-capacity ProScreen — supplied across Australia by Pro Screen Australia.',
     keywords:
       'SLG-108VFRB, heavy duty soil screener Australia, DeSite 108, gravel screener, aggregate screener, vibratory ProScreen',
     canonical: `${contact.siteUrl}/products/slg-108vfrb`,
@@ -103,11 +104,11 @@ export const routes = [
   {
     path: '/products/slg-78vf',
     file: 'products/slg-78vf/index.html',
-    title: `DeSite SLG-78VF Portable Screener | ${siteName}`,
+    title: `Skid Steer Soil Screener SLG-78VF | ${siteName}`,
     description:
-      'DeSite SLG-78VF portable vibratory screener with multi-slope deck. Screen topsoil, gravel and aggregate — supplied in Australia by Pro Screen Australia.',
+      'Portable soil screener and screen attachment for skid steers. Grade topsoil, dirt and gravel on-site. DeSite SLG-78VF supplied Australia-wide.',
     keywords:
-      'SLG-78VF, portable soil screener Australia, topsoil screener, gravel screener Australia, DeSite ProScreen',
+      'screen attachment for skid steer, portable soil screener, SLG-78VF, topsoil screener, dirt screener, DeSite ProScreen',
     canonical: `${contact.siteUrl}/products/slg-78vf`,
     changefreq: 'monthly',
     priority: '0.9',
@@ -139,11 +140,11 @@ export const routes = [
   {
     path: '/products/slg-68v',
     file: 'products/slg-68v/index.html',
-    title: `DeSite SLG-68V Compact Screener | ${siteName}`,
+    title: `Small Soil Screener SLG-68V | ${siteName}`,
     description:
-      'DeSite SLG-68V compact portable screener for smaller contractors and landscapers. Screen soil, gravel and aggregate — supplied nationwide by Pro Screen Australia.',
+      'Small soil screener and dirt screener for compact carriers. DeSite SLG-68V screens topsoil, gravel and aggregate — supplied nationwide by Pro Screen Australia.',
     keywords:
-      'SLG-68V, compact soil screener Australia, small gravel screener, DeSite 68V, portable screener Australia',
+      'small screener, dirt screener, SLG-68V, compact soil screener Australia, portable screener Australia',
     canonical: `${contact.siteUrl}/products/slg-68v`,
     changefreq: 'monthly',
     priority: '0.9',
@@ -157,9 +158,9 @@ export const routes = [
   {
     path: '/products/static-grizzly',
     file: 'products/static-grizzly/index.html',
-    title: `DeSite Static Grizzly 78 & 108 | ${siteName}`,
+    title: `Rock Screen & Static Grizzly | ${siteName}`,
     description:
-      'DeSite SLG-78 and SLG-108 Static Grizzlies for oversize separation of soil, gravel and aggregate. No-power screeners supplied in Australia by Pro Screen Australia.',
+      'Rock screen and static grizzly for oversize soil, gravel and aggregate. DeSite SLG-78 and SLG-108 no-power screeners supplied in Australia by Pro Screen Australia.',
     keywords:
       'static grizzly screener Australia, SLG-78 static grizzly, SLG-108 static grizzly, DeSite grizzly, rock screener, oversize screening',
     canonical: `${contact.siteUrl}/products/static-grizzly`,
@@ -193,10 +194,10 @@ export const routes = [
   {
     path: '/products/mini-screeners',
     file: 'products/mini-screeners/index.html',
-    title: `Mini Screeners SLG-56 & SLG-48 | ${siteName}`,
+    title: `Mini Screener for Sale Australia | ${siteName}`,
     description:
-      'DeSite SLG-56 and SLG-48 mini screeners stocked in Australia by Pro Screen Australia. Non-vibratory decks for compact excavators, tractors and smaller skidsteers.',
-    keywords: 'mini screener Australia, SLG-56, SLG-48, DeSite mini screener, compact soil screener',
+      'Mini screener and small screener for sale in Australia. DeSite SLG-56 and SLG-48 decks for mini excavators, stand-on skids and compact tractors.',
+    keywords: 'mini screener, small screener, mini screener for sale Australia, SLG-56, SLG-48, compact soil screener',
     canonical: `${contact.siteUrl}/products/mini-screeners`,
     changefreq: 'monthly',
     priority: '0.7',
@@ -210,10 +211,10 @@ export const routes = [
   {
     path: '/products/dump-trailers',
     file: 'products/dump-trailers/index.html',
-    title: `Dump Trailers XD 35 55 80 | ${siteName}`,
+    title: `XD Dump Trailers 35, 55 & 80 | ${siteName}`,
     description:
-      'DeSite Xtreme Duty dump trailers XD 35, 55 and 80 stocked in Australia. Excavator-rated floors for compact gear.',
-    keywords: 'dump trailer Australia, DeSite XD 35, XD 55, XD 80, excavator dump trailer',
+      'XD70 searchers: DeSite dump trailers in Australia are XD 35, 55 and 80 — not an XD 70. Excavator-rated floors; view a unit in your area.',
+    keywords: 'XD70, XD 70 dump trailer, DeSite XD 35, XD 55, XD 80, dump trailer Australia',
     canonical: `${contact.siteUrl}/products/dump-trailers`,
     changefreq: 'monthly',
     priority: '0.7',
@@ -227,10 +228,10 @@ export const routes = [
   {
     path: '/products/skid-steer-attachments',
     file: 'products/skid-steer-attachments/index.html',
-    title: `Skid-Steer Attachments | ${siteName}`,
+    title: `Skid Steer Attachments | ${siteName}`,
     description:
-      'DeSite Mulle Bin, SR-2 and SR-3 skid-steer attachments stocked in Australia by Pro Screen Australia.',
-    keywords: 'skid steer attachments Australia, Mulle Bin, SR-2 ripper, SR-3 ripper, DeSite attachments',
+      'Need a screen attachment for a skid steer? See the SLG-78VF. This page is DeSite mule bins and rippers — stocked in Australia by Pro Screen Australia.',
+    keywords: 'screen attachment for skid steer, skid steer attachments Australia, Mulle Bin, SR-2 ripper, SR-3 ripper',
     canonical: `${contact.siteUrl}/products/skid-steer-attachments`,
     changefreq: 'monthly',
     priority: '0.7',
@@ -294,7 +295,7 @@ export const routes = [
     file: 'for/civil-contractors/index.html',
     title: `Screen Soil and Gravel On-Site | ${siteName}`,
     description:
-      'Screen soil and gravel on the job for subdivisions, building works and retaining walls. 100 mm mesh plus a 50 mm or 3 inch filling screen. Pro Screen Australia.',
+      'Screen soil and gravel on the job for subdivisions, building works and retaining walls. Soil and gravel screens for civil crews — 100 mm then 50 mm or 3 inch fill.',
     keywords:
       'civil contractor screener Australia, subdivision landscaping screener, skid steer soil screening, retaining wall fill, DeSite Proscreen',
     canonical: `${contact.siteUrl}/for/civil-contractors`,
@@ -310,9 +311,9 @@ export const routes = [
   {
     path: '/for/topsoil-landscaping',
     file: 'for/topsoil-landscaping/index.html',
-    title: `Topsoil Screening for Landscapers | ${siteName}`,
+    title: `Topsoil Screen & Soil Screening | ${siteName}`,
     description:
-      'Grade topsoil, compost and yard soil on-site in Australia. DeSite Proscreens for landscapers — mesh matched to the finish you sell.',
+      'Topsoil screen and soil screening on-site in Australia. A vibratory Proscreen grades dirt and top dressing — not a power rock screen. Call Rob to match mesh.',
     keywords:
       'topsoil screener Australia, landscaping soil screener, on-site topsoil screening, compost screener Australia, Pro Screen Australia',
     canonical: `${contact.siteUrl}/for/topsoil-landscaping`,
@@ -328,9 +329,9 @@ export const routes = [
   {
     path: '/for/aggregate-and-road-metal',
     file: 'for/aggregate-and-road-metal/index.html',
-    title: `Gravel & Road Metal Screening | ${siteName}`,
+    title: `Compact Aggregate Screening | ${siteName}`,
     description:
-      'On-site aggregate screening in Australia — road metal, pea gravel, septic stone and drainage rock. DeSite Proscreens and Static Grizzlies from Pro Screen Australia.',
+      'Compact aggregate screening machines for sale in Australia — portable gravel and road-metal screens, not a full crushing plant. DeSite from Pro Screen Australia.',
     keywords:
       'aggregate screener Australia, road metal screening, gravel screener Australia, drainage stone screener, septic rock mesh',
     canonical: `${contact.siteUrl}/for/aggregate-and-road-metal`,
@@ -454,7 +455,7 @@ export const websiteJsonLd = {
   url: contact.siteUrl,
   name: siteName,
   description:
-    'DeSite soil, gravel and aggregate screeners for Australia. Portable vibratory ProScreens from Pro Screen Australia.',
+    'Portable soil screeners, dirt screeners and screening machines for Australia from Pro Screen Australia.',
   publisher: { '@id': localBusinessId },
   inLanguage: 'en-AU',
 }
@@ -463,7 +464,7 @@ export const organizationJsonLd = {
   '@type': 'LocalBusiness',
   '@id': localBusinessId,
   name: 'Pro Screen Australia',
-  alternateName: 'Pro Screen Australia',
+  alternateName: ['Pro Screen Australia', 'Proscreen Australia', 'ProScreen'],
   url: contact.siteUrl,
   telephone: contact.phoneTel,
   image: defaultOgImage,
@@ -497,9 +498,15 @@ export const organizationJsonLd = {
   },
   knowsAbout: [
     'soil screener',
+    'portable soil screener',
+    'dirt screener',
     'gravel screener',
     'aggregate screener',
     'topsoil screener',
+    'mini screener',
+    'screening equipment',
+    'screening machine',
+    'skid steer screen attachment',
     'DeSite ProScreen',
     'vibratory screening equipment',
     'cow race gravel screening',
@@ -578,7 +585,7 @@ export const organizationJsonLd = {
 /** Home page entity graph: WebSite + LocalBusiness for crawlers and AI engines. */
 export const homeJsonLd = {
   '@context': 'https://schema.org',
-  '@graph': [websiteJsonLd, organizationJsonLd],
+  '@graph': [websiteJsonLd, organizationJsonLd, searchFaqJsonLd()],
 }
 
 function providerRef() {

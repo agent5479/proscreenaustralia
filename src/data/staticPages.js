@@ -7,6 +7,7 @@ import { forFarmersHtml } from '../content/for-farmers.js'
 import { forNelsonNationwideHtml } from '../content/for-nelson-nationwide.js'
 import { forTopsoilLandscapingHtml } from '../content/for-topsoil-landscaping.js'
 import { homeHtml } from '../content/home.js'
+import { buildSearchFaqHtml } from './searchFaq.js'
 import { photosHtml } from '../content/photos.js'
 import { slg108Html } from '../content/slg-108vfrb.js'
 import { slg68Html } from '../content/slg-68v.js'
@@ -24,7 +25,7 @@ import { buildImageCatalogHtml } from './imageCatalogHtml.js'
 import { buildStaticChrome } from './staticChrome.js'
 
 const pageBodies = {
-  '/': homeHtml,
+  '/': homeHtml + buildSearchFaqHtml(),
   '/about': aboutHtml,
   '/contact': contactHtml,
   '/photos': photosHtml,

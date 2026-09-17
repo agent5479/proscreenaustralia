@@ -1,6 +1,7 @@
 import HtmlContent from '../components/HtmlContent'
 import ContactForm from '../components/ContactForm'
 import { homeHtml } from '../content/home'
+import { buildSearchFaqHtml } from '../data/searchFaq'
 import { contactHtml } from '../content/contact'
 import { photosHtml } from '../content/photos'
 import { videosHtml } from '../content/videos'
@@ -33,7 +34,7 @@ function Page({ html }) {
 }
 
 export { AboutPage }
-export const HomePage = () => <Page html={homeHtml} />
+export const HomePage = () => <Page html={homeHtml + buildSearchFaqHtml()} />
 
 export const ContactPage = () => (
   <>

@@ -97,6 +97,12 @@ if (homeHtml) {
   if (!homeHtml.includes('"@type":"LocalBusiness"')) {
     fail('Home JSON-LD must include LocalBusiness')
   }
+  if (!homeHtml.includes('"@type":"FAQPage"')) {
+    fail('Home JSON-LD must include FAQPage')
+  }
+  if (!homeHtml.includes('id="faq"')) {
+    fail('Home HTML must include visible FAQ section')
+  }
 }
 
 // Sample public product page meta
@@ -112,7 +118,7 @@ if (product && productHtml) {
   if (!/name="robots" content="index, follow/.test(productHtml)) {
     fail('Product HTML robots should be index, follow')
   }
-  if (!productHtml.includes('<h1>DeSite SLG-78VF</h1>')) {
+  if (!productHtml.includes('<h1>DeSite SLG-78VF Portable Soil Screener</h1>')) {
     fail('Product HTML missing prerendered body h1')
   }
 }

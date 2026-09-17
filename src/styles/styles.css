@@ -3121,6 +3121,47 @@ img[data-image-loaded="true"] {
   margin: 0 16px 16px;
 }
 
+.search-faq {
+  padding: 64px 20px 72px;
+  background: #f4fafc;
+}
+
+.search-faq .container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.search-faq-item {
+  background: #fff;
+  border: 2px solid rgba(0, 153, 216, 0.28);
+  border-radius: 14px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+
+.search-faq-item h3 {
+  color: #006a9a;
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.search-faq-item p {
+  color: #2c2c2c;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.search-faq-cta {
+  text-align: center;
+  margin: 28px 0 0;
+  color: #2c2c2c;
+}
+
+.search-faq-cta a {
+  color: #006a9a;
+  font-weight: 600;
+}
+
 .lead-close {
   background: #e6f5fb;
   border: 2px solid #0099d8;

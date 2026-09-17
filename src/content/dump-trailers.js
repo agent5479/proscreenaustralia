@@ -21,6 +21,7 @@ export const dumpTrailersHtml = `<!-- Product Detail -->
       <h2>Product Description</h2>
       <p>DeSite dump trailers are built to take excavator loading: laminated 5/8″ steel floors, a frameless dump body that puts steel where it wears, and a hitch tube long enough for 90-degree loading against a blade in a tight yard.</p>
       <p>Call Rob to match trailer capacity to the excavator or skidsteer you run, and to view a unit in your area.</p>
+      <p><strong>Looking for an XD70?</strong> There is no XD 70 in the DeSite dump-trailer range we stock. Current models are the XD 35 (3.5 yd), XD 55 (5.5 yd) and XD 80 (8 yd). If you searched XD70, the closest capacities are the XD 55 and XD 80.</p>
     </div>
     <div class="product-specifications">
       <h2>Shared build</h2>
