@@ -277,7 +277,7 @@ function bindIgStories(root) {
         <div class="ig-story-progress" aria-hidden="true"></div>
         <header class="ig-story-viewer-head">
           <div class="ig-story-viewer-identity">
-            <img class="ig-story-viewer-avatar" alt="" />
+            <img class="ig-story-viewer-avatar" alt="Story thumbnail" />
             <div>
               <strong class="ig-story-viewer-title"></strong>
               <span class="ig-story-viewer-handle">@proscreen_australia</span>
@@ -285,7 +285,7 @@ function bindIgStories(root) {
           </div>
           <button type="button" class="ig-story-close" aria-label="Close story">×</button>
         </header>
-        <img class="ig-story-viewer-image" alt="" />
+        <img class="ig-story-viewer-image" alt="Equipment story" />
         <p class="ig-story-viewer-caption"></p>
         <a class="ig-story-viewer-cta" href="${contact.instagramUrl}" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
         <button type="button" class="ig-story-nav ig-story-nav-prev" aria-label="Previous story"></button>
@@ -346,13 +346,16 @@ function bindIgStories(root) {
 
     index = nextIndex
     const story = stories[index]
-    const src = story.dataset.igSrc || story.querySelector('img')?.getAttribute('src') || ''
+    const thumb = story.querySelector('img')
+    const src = story.dataset.igSrc || thumb?.getAttribute('src') || ''
     const title = story.dataset.igTitle || story.querySelector('.ig-story-label')?.textContent || ''
     const caption = story.dataset.igCaption || ''
+    const alt = thumb?.getAttribute('alt') || title
 
     avatar.src = src
+    avatar.alt = alt
     imageEl.src = src
-    imageEl.alt = title
+    imageEl.alt = alt
     titleEl.textContent = title
     captionEl.textContent = caption
     markSeen(index)

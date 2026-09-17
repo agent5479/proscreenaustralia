@@ -136,6 +136,12 @@ if (notFoundHtml) {
   }
 }
 
+function imgAltIssues(html) {
+  return [...html.matchAll(/<img\b[\s\S]*?>/gi)]
+    .map((m) => m[0])
+    .filter((img) => !/\balt\s*=/.test(img) || /\balt\s*=\s*(["'])\s*\1/.test(img))
+}
+
 // Soft length checks for indexable routes
 for (const route of indexable) {
   if (route.title.length > 65) {
@@ -143,6 +149,12 @@ for (const route of indexable) {
   }
   if (route.description.length < 70 || route.description.length > 165) {
     fail(`${route.path}: description length ${route.description.length}`)
+  }
+  if (!route.file) continue
+  const html = read(path.join(distDir, route.file))
+  const badImgs = imgAltIssues(html)
+  if (badImgs.length) {
+    fail(`${route.path}: ${badImgs.length} img tag(s) missing a non-empty alt`)
   }
 }
 

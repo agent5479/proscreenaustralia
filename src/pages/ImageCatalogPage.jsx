@@ -173,7 +173,7 @@ export default function ImageCatalogPage() {
               >
                 <img
                   src={image.src}
-                  alt=""
+                  alt={image.alt}
                   loading="lazy"
                   decoding="async"
                 />
