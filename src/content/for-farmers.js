@@ -2,7 +2,7 @@ export const forFarmersHtml = `<!-- Farmers lead page -->
 <section class="lead-page">
   <div class="lead-hero lead-hero-farmers" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.38), rgba(0,0,0,0.72)), url('/images/farmers-hero.jpg');">
     <div class="lead-hero-inner">
-      <h1>Cow race gravel screening on the farm</h1>
+      <h1>Farm gravel screening for cow races</h1>
       <p class="lead-hero-sub">Farm river screening in Australia — make cow race filling from rounded riverbed stone already on the property.</p>
       <div class="cta-buttons lead-cta">
         <a href="tel:+61433045045" class="cta-primary">Call +61 433 045 045</a>

@@ -29,7 +29,9 @@ Most engineering items are **already implemented** in this repo. Source of truth
 | Canonical URLs | Done | Every indexable route in `seo.js`; 404 has no canonical. |
 | `sitemap.xml` | Done | Auto-generated on build (22 public URLs). |
 | `robots.txt` | Done | Allows `/`, blocks `/idm/`, `/legacy/`, `/drafts/`. |
-| JSON-LD entity graph | Done | Home: `WebSite` + `LocalBusiness` (`@graph`); products: `Product`; `/for/*`: `Service`; mesh guide: `WebPage` + `ItemList`. |
+| JSON-LD entity graph | Done | Shared `@id` graph: AU `LocalBusiness`, DeSite manufacturer, Product/Service nodes, home `CollectionPage` + screener `ItemList` + trimmed `FAQPage`, breadcrumbs. |
+| Primary keyword per URL | Done | Unique `primaryKeyword` on every indexable route; asserted in CI. |
+| AU vs NZ entity split | Done | About/footer name Site Machinery NZ; schema `areaServed` Australia only; no shared Product `@id`s with NZ. |
 | `lang="en-AU"` | Done | `index.html` + prerendered HTML. |
 | Internal / draft routes noindex | Done | `/idm/*`, redirects, legacy paths excluded from sitemap. |
 | Bing IndexNow | Done | Key at `/{key}.txt`; post-deploy job submits sitemap URLs to `api.indexnow.org`. |
@@ -97,9 +99,26 @@ Ongoing:
 
 ---
 
+## AU vs NZ keyword split (Pro Screen Australia ↔ Site Machinery NZ)
+
+Both sites sell DeSite equipment. Keep the commercial layers separate so they do not cannibalise each other.
+
+| Layer | Pro Screen Australia | Site Machinery NZ |
+| --- | --- | --- |
+| Entity | Australian supplier of DeSite | New Zealand supplier of DeSite |
+| Commercial phrases | `* Australia` (soil screener Australia, portable soil screener Australia, …) | `* New Zealand` / NZ-English variants |
+| Specs / mesh charts | Shared factual openings OK | Shared factual openings OK |
+| FAQs, freight, viewing, customer examples | Australian only | New Zealand only |
+| Cross-links | Footer/About → Site Machinery NZ (sibling) | Reciprocal link to Pro Screen Australia |
+| Manufacturer | `desiteproducts.au` = info only, not the order desk | Same rule for NZ order channel |
+
+Do **not** add `hreflang` between the two domains (different brands, not translations). Do **not** invent city doorway pages.
+
+---
+
 ## Reference
 
 - Implementation notes and deploy checks: [DEPLOYMENT.md](./DEPLOYMENT.md)
-- Route / schema source of truth: `src/data/seo.js`
+- Route / schema source of truth: `src/data/seo.js`, `src/data/entityGraph.js`
 - Body prerender: `scripts/prerender-meta.mjs`, `src/data/staticPages.js`
 - Build verification: `npm run build` (includes `assert-seo.mjs`)

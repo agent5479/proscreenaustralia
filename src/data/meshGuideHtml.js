@@ -37,6 +37,20 @@ function renderTable(table) {
 </div>`
 }
 
+function renderMachineLine(section) {
+  if (!section.machineLinks?.length) return ''
+  const links = section.machineLinks
+    .map(
+      (link) =>
+        `<a href="${escapeHtml(link.href)}" style="color:#006a9a;font-weight:600;">${escapeHtml(link.label)}</a>`,
+    )
+    .join(' · ')
+  const lead = section.machines
+    ? `<strong>Which machine uses this mesh?</strong> ${escapeHtml(section.machines)} `
+    : `<strong>Which machine uses this mesh?</strong> `
+  return `<p class="mesh-machine-line">${lead}${links}</p>`
+}
+
 /**
  * Build-time HTML for /screening-recommendation so crawlers see the mesh guide without JS.
  */
@@ -63,6 +77,7 @@ export function buildMeshGuideHtml() {
       return `<section id="${escapeHtml(section.id)}" class="mesh-section">
   <h2>${escapeHtml(section.title)}</h2>
   <p class="mesh-section-intro">${escapeHtml(section.intro)}</p>
+  ${renderMachineLine(section)}
   ${sectionImage}
   ${tables}
 </section>`
@@ -72,7 +87,7 @@ export function buildMeshGuideHtml() {
   return `<!-- Mesh guide (static prerender) -->
 <section class="page-content mesh-page">
   <div class="mesh-hero">
-    <h1>Screen Mesh Recommendation Guide</h1>
+    <h1>Screener Mesh Sizes — Recommendation Guide</h1>
     <p>
       Choose the right DeSite mesh for topsoil, gravel, compost, mulch, farm filling and
       aggregate. Charts below are tailored for Pro Screen Australia operators — imperial openings
@@ -106,7 +121,7 @@ export function buildMeshGuideHtml() {
     <h2>Need help picking a mesh?</h2>
     <p>
       Tell us what you are screening and which machine you run — we will recommend openings that
-      Based in Sydney — supply Australia-wide. Call Rob to match mesh to your material and carrier.
+      match. Based in Sydney — supply Australia-wide. Call Rob to match mesh to your material and carrier.
     </p>
     <div class="cta-buttons">
       <a href="tel:${contact.phoneTel}" class="cta-primary">Call ${escapeHtml(contact.phoneDisplay)}</a>

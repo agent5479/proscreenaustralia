@@ -1,7 +1,7 @@
 export const staticGrizzlyHtml = `<!-- Product Detail -->
 <section class="product-detail">
   <div class="product-header">
-    <h1>DeSite Static Grizzly — SLG-78 &amp; SLG-108</h1>
+    <h1>DeSite Static Grizzly Australia — SLG-78 &amp; SLG-108</h1>
     <p>No-power grizzly screeners for oversize topsoil, gravel and aggregate. Wide 2″ / 3″ / 4″ square mesh, tilting deck and spring suspension — without electrics to babysit. The SLG-78 is built for mid-size carriers; the SLG-108 uses a full-size 108-class deck for loaders up to about 12 tonne, plus excavators.</p>
     <p style="margin-top:16px;line-height:1.7;max-width:720px;"><strong style="color:#006a9a;">Australian operators:</strong> First pass for farm river gravel, cow race filling and civil oversize — then a Proscreen for finished grades. <a href="/screening-recommendation#farm-filling" style="color:#006a9a;font-weight:600;">Farm &amp; filling mesh</a> · <a href="/for/farmers" style="color:#006a9a;font-weight:600;">Farmers</a> · <a href="/for/aggregate-and-road-metal" style="color:#006a9a;font-weight:600;">Aggregate &amp; road metal</a></p>
     <p style="color:#ccc;margin-top:12px;font-size:1rem;">Also used for crushed concrete, ground asphalt and wood mulch when the job needs a wide opening rather than a fine soil mesh.</p>

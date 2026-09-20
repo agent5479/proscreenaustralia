@@ -100,8 +100,26 @@ if (homeHtml) {
   if (!homeHtml.includes('"@type":"FAQPage"')) {
     fail('Home JSON-LD must include FAQPage')
   }
+  if (!homeHtml.includes('"@type":"ItemList"') && !homeHtml.includes('"@type":"CollectionPage"')) {
+    fail('Home JSON-LD must include CollectionPage or ItemList for screener range')
+  }
+  if (!homeHtml.includes(`${contact.siteUrl}/#desite`)) {
+    fail('Home JSON-LD must include DeSite manufacturer @id')
+  }
+  if (homeHtml.includes('XD70') && homeHtml.includes('"@type":"FAQPage"')) {
+    const faqSlice = homeHtml.slice(
+      homeHtml.indexOf('"@type":"FAQPage"'),
+      homeHtml.indexOf('"@type":"FAQPage"') + 2500,
+    )
+    if (faqSlice.includes('XD70')) {
+      fail('Home FAQPage schema must not include XD70')
+    }
+  }
   if (!homeHtml.includes('id="faq"')) {
     fail('Home HTML must include visible FAQ section')
+  }
+  if (!homeHtml.includes('sitemachinery.nz')) {
+    fail('Home (footer) must mention Site Machinery NZ')
   }
 }
 
@@ -120,6 +138,12 @@ if (product && productHtml) {
   }
   if (!productHtml.includes('<h1>DeSite SLG-78VF Portable Soil Screener</h1>')) {
     fail('Product HTML missing prerendered body h1')
+  }
+  if (!productHtml.includes(`${contact.siteUrl}/#desite`)) {
+    fail('Product JSON-LD must reference DeSite manufacturer @id')
+  }
+  if (!productHtml.includes('"name":"Australia"') && !productHtml.includes('"areaServed":{"@type":"Country","name":"Australia"}')) {
+    fail('Product JSON-LD must areaServe Australia')
   }
 }
 
@@ -148,6 +172,19 @@ function imgAltIssues(html) {
     .filter((img) => !/\balt\s*=/.test(img) || /\balt\s*=\s*(["'])\s*\1/.test(img))
 }
 
+const primaryKeywords = new Map()
+for (const route of indexable) {
+  if (!route.primaryKeyword) {
+    fail(`${route.path}: missing primaryKeyword`)
+  } else if (primaryKeywords.has(route.primaryKeyword)) {
+    fail(
+      `${route.path}: duplicate primaryKeyword "${route.primaryKeyword}" (also ${primaryKeywords.get(route.primaryKeyword)})`,
+    )
+  } else {
+    primaryKeywords.set(route.primaryKeyword, route.path)
+  }
+}
+
 // Soft length checks for indexable routes
 for (const route of indexable) {
   if (route.title.length > 65) {
@@ -161,6 +198,10 @@ for (const route of indexable) {
   const badImgs = imgAltIssues(html)
   if (badImgs.length) {
     fail(`${route.path}: ${badImgs.length} img tag(s) missing a non-empty alt`)
+  }
+  if (route.robots?.includes('noindex')) continue
+  if (html.includes('application/ld+json') === false && route.schemaType) {
+    fail(`${route.path}: missing JSON-LD`)
   }
 }
 

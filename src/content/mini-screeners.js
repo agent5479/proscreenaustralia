@@ -1,7 +1,7 @@
 export const miniScreenersHtml = `<!-- Product Detail -->
 <section class="product-detail">
   <div class="product-header">
-    <h1>DeSite Mini Screeners — SLG-56 &amp; SLG-48</h1>
+    <h1>DeSite Mini Soil Screeners — SLG-56 &amp; SLG-48</h1>
     <p>Mini screener and small screener for sale in Australia. Non-vibratory portable decks for subcompact carriers — stocked alongside the 68 / 78 / 108 Proscreens. Call Rob to match deck size to the machine you already run.</p>
     <p style="text-align:center;margin-top:20px;">
       <a href="#slg-56" style="color:#33b4e6;font-weight:600;margin:0 12px;">SLG-56 ↓</a>

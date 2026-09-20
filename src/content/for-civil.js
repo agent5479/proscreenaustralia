@@ -2,7 +2,7 @@ export const forCivilHtml = `<!-- Civil contractors lead page -->
 <section class="lead-page">
   <div class="lead-hero" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.38), rgba(0,0,0,0.72)), url('/images/108-WROKING.webp');">
     <div class="lead-hero-inner">
-      <h1>Subdivision fill screening on site</h1>
+      <h1>Soil screening for civil contractors</h1>
       <p class="lead-hero-sub">On-site soil screening for civil contractors — grade subdivision fill, building works and retaining-wall soil without buying every cubic metre in.</p>
       <div class="cta-buttons lead-cta">
         <a href="tel:+61433045045" class="cta-primary">Call +61 433 045 045</a>

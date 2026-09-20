@@ -2311,6 +2311,22 @@ img[data-image-loaded="true"] {
   max-width: 900px;
 }
 
+.mesh-machine-line {
+  color: #2c2c2c;
+  line-height: 1.7;
+  margin: 0 0 20px;
+  max-width: 900px;
+  padding: 14px 16px;
+  background: rgba(0, 153, 216, 0.1);
+  border-left: 4px solid #0099d8;
+  border-radius: 8px;
+}
+
+.mesh-machine-line a {
+  color: #006a9a;
+  font-weight: 600;
+}
+
 .mesh-table-wrap {
   background: rgba(0, 153, 216, 0.08);
   border: 2px solid rgba(0, 153, 216, 0.28);

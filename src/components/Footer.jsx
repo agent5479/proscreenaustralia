@@ -8,7 +8,18 @@ export default function Footer() {
         <div>
           <h3>Pro Screen Australia</h3>
           <p className="footer-tagline">Affordable, top quality soil, gravel and aggregate screening machines</p>
-          <p>Australian supplier of DeSite soil, gravel and earthmoving processing equipment.</p>
+          <p>Australian supplier of DeSite soil, gravel and aggregate screeners.</p>
+          <p style={{ marginTop: 10, fontSize: '0.95rem', lineHeight: 1.6 }}>
+            DeSite manufactures. Pro Screen Australia supplies Australia.{' '}
+            <a href="https://sitemachinery.nz/" target="_blank" rel="noopener noreferrer">
+              Site Machinery NZ
+            </a>{' '}
+            supplies New Zealand. Manufacturer info:{' '}
+            <a href="https://desiteproducts.au/" target="_blank" rel="noopener noreferrer">
+              desiteproducts.au
+            </a>
+            .
+          </p>
           <a className="footer-desite" href="https://desiteproducts.au/" target="_blank" rel="noopener noreferrer">
             <img src={withBase('/images/desite-logo.png')} alt="DeSite Products" />
           </a>

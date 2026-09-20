@@ -50,7 +50,7 @@ export default function ScreeningRecommendationPage() {
   return (
     <section className="page-content mesh-page">
       <div className="mesh-hero">
-        <h1>Screen Mesh Recommendation Guide</h1>
+        <h1>Screener Mesh Sizes — Recommendation Guide</h1>
         <p>
           Choose the right DeSite mesh for topsoil, gravel, compost, mulch, farm filling and
           aggregate. Charts below are tailored for Pro Screen Australia operators — imperial openings
@@ -97,6 +97,18 @@ export default function ScreeningRecommendationPage() {
         <section key={section.id} id={section.id} className="mesh-section">
           <h2>{section.title}</h2>
           <p className="mesh-section-intro">{section.intro}</p>
+          {section.machineLinks?.length > 0 && (
+            <p className="mesh-machine-line">
+              <strong>Which machine uses this mesh?</strong>{' '}
+              {section.machines ? `${section.machines} ` : null}
+              {section.machineLinks.map((link, i) => (
+                <span key={link.href}>
+                  {i > 0 ? ' · ' : null}
+                  <Link to={link.href}>{link.label}</Link>
+                </span>
+              ))}
+            </p>
+          )}
           {section.image && <GradeImage image={section.image} />}
           {section.tables.map((table) => (
             <MeshTable key={table.title} table={table} />
@@ -108,7 +120,8 @@ export default function ScreeningRecommendationPage() {
         <h2>Need help picking a mesh?</h2>
         <p>
           Tell us what you are screening and which machine you run — we will recommend openings that
-          Based in Sydney — supply Australia-wide. Call Rob to match mesh to your material and carrier.
+          match. Based in Sydney — supply Australia-wide. Call Rob to match mesh to your material and
+          carrier.
         </p>
         <div className="cta-buttons">
           <a href={phoneHref} className="cta-primary">

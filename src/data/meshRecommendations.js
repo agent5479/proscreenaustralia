@@ -1,7 +1,7 @@
 /**
  * Screen mesh recommendation charts rebranded for Pro Screen Australia.
  * Source charts adapted from DeSite guidance; imperial sizes kept
- * (industry standard) with approximate mm equivalents for NZ readers.
+ * (industry standard) with approximate mm equivalents for Australian operators.
  * Grade photos sourced from idmcabc.com/screening-recomendation for product-size perception.
  */
 
@@ -52,6 +52,14 @@ export const meshSections = [
     title: 'Base Mesh Charts',
     intro:
       'Use these square and elongated charts as a starting point. Final product size is typically a little smaller than the mesh opening, depending on material and moisture.',
+    machines:
+      'Most openings fit the SLG-68V, SLG-78VF and SLG-108VFRB Proscreens; coarse square mesh also suits the Static Grizzly.',
+    machineLinks: [
+      { href: '/products/slg-68v', label: 'SLG-68V' },
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+      { href: '/products/static-grizzly', label: 'Static Grizzly' },
+    ],
     tables: [
       {
         title: 'Square Mesh',
@@ -70,6 +78,14 @@ export const meshSections = [
     title: 'Topsoil and Triple Mix',
     intro:
       'Topsoil is in demand and profitable. Some customers want a very fine finish; others prefer commercial-grade product at a sharper price point.',
+    machines:
+      'Fine top dressing and commercial triple-mix: SLG-68V, SLG-78VF or SLG-108VFRB with elongated or square soil mesh.',
+    machineLinks: [
+      { href: '/products/slg-68v', label: 'SLG-68V' },
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+      { href: '/for/topsoil-landscaping', label: 'Topsoil screening' },
+    ],
     tables: [
       {
         title: 'Top Dressing Mesh Recommendation',
@@ -114,6 +130,12 @@ export const meshSections = [
     intro:
       'Compost can be finished as a top-dressing fertiliser / soil builder, or blended with sand and topsoil to create triple mix.',
     image: img('compost.jpg', 'Screened compost product grade example'),
+    machines: 'Compost and organics: SLG-68V or SLG-78VF with elongated soil mesh; step up to SLG-108VFRB for yard volume.',
+    machineLinks: [
+      { href: '/products/slg-68v', label: 'SLG-68V' },
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+    ],
     tables: [
       {
         title: 'Compost Mesh Recommendation',
@@ -135,6 +157,12 @@ export const meshSections = [
     intro:
       'Wood mulch is a light product that moves differently across the deck than soil or aggregate. Run a slightly larger mesh. Many operators screen out fines and mix them into topsoil for slow-release decomposition — a practical way to recycle wood fines.',
     image: img('wood-mulch.jpg', 'Screened wood mulch product grade example'),
+    machines: 'Wood mulch: SLG-78VF or SLG-108VFRB; Static Grizzly for coarse first-pass oversize.',
+    machineLinks: [
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+      { href: '/products/static-grizzly', label: 'Static Grizzly' },
+    ],
     tables: [
       {
         title: 'Wood Mulch Mesh Recommendation',
@@ -156,6 +184,14 @@ export const meshSections = [
     title: 'Farm Gravel, Cow Races and Filling',
     intro:
       'Immediate market offer: 100 mm mesh first to knock off oversize, then a 50 mm or 3 inch (~75 mm) secondary to make filling material. Riverbed stone that has rounded on farm makes stronger cow races than sharp crushed product. Exact 70 mm is not a listed stock square — 50 mm and 3 inch (~75 mm) are the nearest DeSite openings; 70 mm can be special-ordered.',
+    machines:
+      'Farm river gravel: Static Grizzly or dual-78 setup for oversize, then a Proscreen for filling — see the farmers page.',
+    machineLinks: [
+      { href: '/products/static-grizzly', label: 'Static Grizzly' },
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+      { href: '/for/farmers', label: 'Farmers' },
+    ],
     tables: [
       {
         title: 'First pass — oversize',
@@ -183,6 +219,14 @@ export const meshSections = [
     title: 'Aggregate Products',
     intro:
       'Wider square mesh (including 2″, 3″ and 4″ grizzly openings) is commonly sought for durable aggregate separation, road base and recycled materials. Photos show typical finished grades for visual comparison.',
+    machines:
+      'Road metal, pea gravel and recycled concrete: Static Grizzly for oversize, SLG-78VF or SLG-108VFRB for finished grades.',
+    machineLinks: [
+      { href: '/products/static-grizzly', label: 'Static Grizzly' },
+      { href: '/products/slg-78vf', label: 'SLG-78VF' },
+      { href: '/products/slg-108vfrb', label: 'SLG-108VFRB' },
+      { href: '/for/aggregate-and-road-metal', label: 'Aggregate screening' },
+    ],
     tables: [
       {
         title: 'Pea Stone',
