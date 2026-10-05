@@ -27,6 +27,7 @@ import {
   MiniScreenersPage,
   DumpTrailersPage,
   SkidSteerAttachmentsPage,
+  MuleBinsPage,
   GrizzlyBarPage,
   VibratoryCommercialPage,
   VideosPage,
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="/products/telehandler-bins" element={<TelehandlerBinsPage />} />
           <Route path="/products/mini-screeners" element={<MiniScreenersPage />} />
           <Route path="/products/dump-trailers" element={<DumpTrailersPage />} />
+          <Route path="/products/mule-bins" element={<MuleBinsPage />} />
           <Route path="/products/skid-steer-attachments" element={<SkidSteerAttachmentsPage />} />
           <Route path="/products/grizzly-bar" element={<GrizzlyBarPage />} />
           <Route path="/products/additional-products" element={<Navigate to="/" replace />} />

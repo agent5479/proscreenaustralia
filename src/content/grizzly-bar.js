@@ -1,13 +1,13 @@
 export const grizzlyBarHtml = `<!-- Product Detail -->
 <section class="product-detail">
-  <div class="product-header">
-    <h1>DeSite Grizzly Bar</h1>
-    <p>Traditional bar-style oversize separation — distinct from the mesh SLG-78 / SLG-108 Static Grizzlies. Knock off oversize rock and debris before, or instead of, a mesh deck. Stocked in Australia.</p>
-  </div>
-
   <div class="product-gallery">
     <img src="/images/grizzly2.jpg" alt="DeSite grizzly bar screening equipment">
     <img src="/images/grizzly3.jpg" alt="Grizzly screening dirt, stone and sticks">
+  </div>
+
+  <div class="product-header">
+    <h1>DeSite Grizzly Bar</h1>
+    <p>Traditional bar-style oversize separation — distinct from the mesh SLG-78 / SLG-108 Static Grizzlies. Knock off oversize rock and debris before, or instead of, a mesh deck. Stocked in Australia.</p>
   </div>
 
   <div class="product-details">

@@ -18,6 +18,7 @@ import { telehandlerBinsHtml } from '../content/telehandler-bins.js'
 import { miniScreenersHtml } from '../content/mini-screeners.js'
 import { dumpTrailersHtml } from '../content/dump-trailers.js'
 import { skidSteerAttachmentsHtml } from '../content/skid-steer-attachments.js'
+import { muleBinsHtml } from '../content/mule-bins.js'
 import { grizzlyBarHtml } from '../content/grizzly-bar.js'
 import { videosHtml } from '../content/videos.js'
 import { buildMeshGuideHtml } from './meshGuideHtml.js'
@@ -38,6 +39,7 @@ const pageBodies = {
   '/products/telehandler-bins': telehandlerBinsHtml,
   '/products/mini-screeners': miniScreenersHtml,
   '/products/dump-trailers': dumpTrailersHtml,
+  '/products/mule-bins': muleBinsHtml,
   '/products/skid-steer-attachments': skidSteerAttachmentsHtml,
   '/products/grizzly-bar': grizzlyBarHtml,
   '/products/additional-products': additionalProductsHtml,

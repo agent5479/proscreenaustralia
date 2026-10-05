@@ -117,6 +117,11 @@ export const organizationJsonLd = {
 /** Core screener catalogue for home ItemList (not dump trailers / XD70). */
 export const screenerCatalogue = [
   {
+    path: '/products/static-grizzly',
+    name: 'DeSite Static Grizzly SLG-78 & SLG-108',
+    category: 'Static grizzly / rock screener',
+  },
+  {
     path: '/products/mini-screeners',
     name: 'DeSite Mini Screeners SLG-56 & SLG-48',
     category: 'Mini soil screener',
@@ -140,11 +145,6 @@ export const screenerCatalogue = [
     path: '/products/slg-108vfrb',
     name: 'DeSite SLG-108VFRB',
     category: 'Heavy duty soil screener',
-  },
-  {
-    path: '/products/static-grizzly',
-    name: 'DeSite Static Grizzly SLG-78 & SLG-108',
-    category: 'Static grizzly / rock screener',
   },
 ]
 

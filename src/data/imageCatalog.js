@@ -122,7 +122,7 @@ const localBins = [
 const localAdditional = [
   img('/images/catalog/slg-56.webp', 'DeSite SLG-56 Mini screener'),
   img('/images/catalog/slg-48.webp', 'DeSite SLG-48 Mini screener'),
-  img('/images/catalog/mulle-bin.webp', 'DeSite Mulle Bin skid-steer attachment'),
+  img('/images/catalog/mulle-bin.webp', 'DeSite Mule Bin'),
   img('/images/catalog/sr2.webp', 'DeSite SR-2 skid-steer ripper'),
   img('/images/catalog/sr3.webp', 'DeSite SR-3 skid-steer ripper'),
   img('/images/catalog/xd-35.webp', 'DeSite Xtreme Duty dump trailer XD 35'),

@@ -13,7 +13,7 @@ export const homeFaqs = [
   {
     question: 'Do you sell a screen attachment for a skid steer?',
     answer:
-      'Yes. The DeSite SLG-78VF is the portable soil screener designed to be fed by a skid steer or compact loader — optional bucket lugs let you pick it up and move it on site while you screen topsoil, dirt and gravel. Smaller skids and mini excavators use the SLG-56 / SLG-48 mini screeners or the compact SLG-68V. The Mulle Bin and SR rippers on our attachments page are material-handling tools, not screeners.',
+      'Yes. The DeSite SLG-78VF is the portable soil screener designed to be fed by a skid steer or compact loader — optional bucket lugs let you pick it up and move it on site while you screen topsoil, dirt and gravel. Smaller skids and mini excavators use the SLG-56 / SLG-48 mini screeners or the compact SLG-68V. Mule bins are a separate skid-steer bin for bulk material. The SR-2 and SR-3 rippers break ground. Neither is a screener.',
   },
   {
     question: 'What portable soil screener do you supply in Australia?',

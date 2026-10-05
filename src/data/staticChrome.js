@@ -59,15 +59,16 @@ ${bodyHtml}
     </div>
     <div>
       <h3>Products</h3>
+      <a href="${withBase('/products/static-grizzly')}">Static Grizzly (78 &amp; 108)</a>
       <a href="${withBase('/products/slg-108vfrb')}">Proscreen SLG-108VFRB</a>
       <a href="${withBase('/products/slg-78vf')}">Proscreen SLG-78VF</a>
       <a href="${withBase('/products/slg-78vf-flow')}">Proscreen SLG-78VF with Flow Control</a>
       <a href="${withBase('/products/slg-68v')}">Proscreen SLG-68V</a>
-      <a href="${withBase('/products/static-grizzly')}">Static Grizzly (78 &amp; 108)</a>
       <a href="${withBase('/products/mini-screeners')}">Mini Screeners</a>
+      <a href="${withBase('/products/mule-bins')}">Mule Bins</a>
       <a href="${withBase('/products/telehandler-bins')}">Telehandler Bins</a>
       <a href="${withBase('/products/dump-trailers')}">Dump Trailers</a>
-      <a href="${withBase('/products/skid-steer-attachments')}">Skid-Steer Attachments</a>
+      <a href="${withBase('/products/skid-steer-attachments')}">Skid-Steer Rippers</a>
       <a href="${withBase('/products/grizzly-bar')}">Grizzly Bar</a>
     </div>
     <div>

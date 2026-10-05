@@ -569,6 +569,33 @@ body {
   will-change: transform;
 }
 
+.equipment-card > a.equipment-card-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.equipment-card > a:not(.equipment-card-hit),
+.equipment-card .equipment-badge,
+.equipment-card .equipment-cta,
+.equipment-card .equipment-link,
+.equipment-card .equipment-toggle {
+  position: relative;
+  z-index: 3;
+}
+
+.equipment-card-poi {
+  border-color: #e07a2f;
+  box-shadow: 0 8px 28px rgba(196, 92, 18, 0.2);
+}
+
+.equipment-card-poi .equipment-badge {
+  background: linear-gradient(135deg, #c45c12, #e8872a);
+  color: #fff;
+}
+
 .equipment-card.is-collapsible:not(.is-open) .equipment-image {
   height: 200px;
 }

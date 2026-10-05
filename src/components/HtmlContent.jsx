@@ -201,59 +201,62 @@ function setEquipmentOpen(card, open) {
   }
 }
 
+function ensureEquipmentCardHit(card) {
+  if (card.querySelector(':scope > .equipment-card-hit')) return
+  const href =
+    card.querySelector('.equipment-cta')?.getAttribute('href') ||
+    card.querySelector(':scope > a[href]')?.getAttribute('href')
+  if (!href || href.startsWith('#')) return
+  const hit = document.createElement('a')
+  hit.className = 'equipment-card-hit'
+  hit.href = href
+  hit.tabIndex = -1
+  hit.setAttribute('aria-hidden', 'true')
+  card.appendChild(hit)
+}
+
 function bindEquipmentCards(root) {
   root.querySelectorAll('.equipment-card').forEach((card) => {
     const content = card.querySelector('.equipment-content')
-    if (!content || content.querySelector('.equipment-toggle')) return
+    const summary = content?.querySelector(':scope > p')
+    if (content && summary && !content.querySelector('.equipment-toggle')) {
+      const detailNodes = []
+      let pastSummary = false
+      ;[...content.children].forEach((child) => {
+        if (child === summary) {
+          pastSummary = true
+          return
+        }
+        if (pastSummary) detailNodes.push(child)
+      })
+      if (detailNodes.length) {
+        const details = document.createElement('div')
+        details.className = 'equipment-details'
+        details.hidden = true
+        detailNodes.forEach((node) => details.appendChild(node))
 
-    const summary = content.querySelector(':scope > p')
-    if (!summary) return
+        const toggle = document.createElement('button')
+        toggle.type = 'button'
+        toggle.className = 'equipment-toggle'
+        toggle.setAttribute('aria-expanded', 'false')
+        toggle.textContent = 'More details'
 
-    const detailNodes = []
-    let pastSummary = false
-    ;[...content.children].forEach((child) => {
-      if (child === summary) {
-        pastSummary = true
-        return
+        summary.after(toggle)
+        toggle.after(details)
+        card.classList.add('is-collapsible')
       }
-      if (pastSummary) detailNodes.push(child)
-    })
-    if (!detailNodes.length) return
-
-    const details = document.createElement('div')
-    details.className = 'equipment-details'
-    details.hidden = true
-    detailNodes.forEach((node) => details.appendChild(node))
-
-    const toggle = document.createElement('button')
-    toggle.type = 'button'
-    toggle.className = 'equipment-toggle'
-    toggle.setAttribute('aria-expanded', 'false')
-    toggle.textContent = 'More details'
-
-    summary.after(toggle)
-    toggle.after(details)
-    card.classList.add('is-collapsible')
+    }
+    ensureEquipmentCardHit(card)
   })
 
   const onClick = (event) => {
     const toggle = event.target.closest('.equipment-toggle')
-    if (toggle && root.contains(toggle)) {
-      event.preventDefault()
-      const card = toggle.closest('.equipment-card')
-      if (!card) return
-      setEquipmentOpen(card, !card.classList.contains('is-open'))
-      return
-    }
-
-    const mediaLink = event.target.closest('.equipment-card > a')
-    if (mediaLink && root.contains(mediaLink)) {
-      const card = mediaLink.closest('.equipment-card')
-      if (card?.classList.contains('is-collapsible') && !card.classList.contains('is-open')) {
-        event.preventDefault()
-        setEquipmentOpen(card, true)
-      }
-    }
+    if (!toggle || !root.contains(toggle)) return
+    event.preventDefault()
+    event.stopPropagation()
+    const card = toggle.closest('.equipment-card')
+    if (!card) return
+    setEquipmentOpen(card, !card.classList.contains('is-open'))
   }
 
   root.addEventListener('click', onClick)

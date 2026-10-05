@@ -14,6 +14,7 @@ import { telehandlerBinsHtml } from '../content/telehandler-bins'
 import { miniScreenersHtml } from '../content/mini-screeners'
 import { dumpTrailersHtml } from '../content/dump-trailers'
 import { skidSteerAttachmentsHtml } from '../content/skid-steer-attachments'
+import { muleBinsHtml } from '../content/mule-bins'
 import { grizzlyBarHtml } from '../content/grizzly-bar'
 import { additionalProductsHtml } from '../content/additional-products'
 import { forFarmersHtml } from '../content/for-farmers'
@@ -55,6 +56,7 @@ export const TelehandlerBinsPage = () => <Page html={telehandlerBinsHtml} />
 export const MiniScreenersPage = () => <Page html={miniScreenersHtml} />
 export const DumpTrailersPage = () => <Page html={dumpTrailersHtml} />
 export const SkidSteerAttachmentsPage = () => <Page html={skidSteerAttachmentsHtml} />
+export const MuleBinsPage = () => <Page html={muleBinsHtml} />
 export const GrizzlyBarPage = () => <Page html={grizzlyBarHtml} />
 export const AdditionalProductsPage = () => <Page html={additionalProductsHtml} />
 export const ForFarmersPage = () => <Page html={forFarmersHtml} />

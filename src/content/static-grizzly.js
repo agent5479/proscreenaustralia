@@ -1,5 +1,10 @@
 export const staticGrizzlyHtml = `<!-- Product Detail -->
 <section class="product-detail">
+  <div class="product-gallery">
+    <img src="/images/grizzly2.jpg" alt="DeSite Static Grizzly screener">
+    <img src="/images/grizzly3.jpg" alt="DeSite Static Grizzly screening dirt, stone and sticks">
+  </div>
+
   <div class="product-header">
     <h1>DeSite Static Grizzly Australia — SLG-78 &amp; SLG-108</h1>
     <p>No-power grizzly screeners for oversize topsoil, gravel and aggregate. Wide 2″ / 3″ / 4″ square mesh, tilting deck and spring suspension — without electrics to babysit. The SLG-78 is built for mid-size carriers; the SLG-108 uses a full-size 108-class deck for loaders up to about 12 tonne, plus excavators.</p>
@@ -9,11 +14,6 @@ export const staticGrizzlyHtml = `<!-- Product Detail -->
       <a href="#slg-78" style="color:#33b4e6;font-weight:600;margin:0 12px;">SLG-78 specs ↓</a>
       <a href="#slg-108" style="color:#33b4e6;font-weight:600;margin:0 12px;">SLG-108 specs ↓</a>
     </p>
-  </div>
-
-  <div class="product-gallery">
-    <img src="/images/grizzly2.jpg" alt="DeSite Static Grizzly screener">
-    <img src="/images/grizzly3.jpg" alt="DeSite Static Grizzly screening dirt, stone and sticks">
   </div>
 
   <div style="margin: 40px 0; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 20px;">

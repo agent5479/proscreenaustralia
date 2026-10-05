@@ -10,7 +10,8 @@ export const additionalProductsHtml = `<!-- Page Content -->
     <p style="margin-top: 24px;">
       <a href="#mini" style="color:#33b4e6;font-weight:600;margin:0 10px;">Mini screeners</a>
       <a href="#grizzly-bar" style="color:#33b4e6;font-weight:600;margin:0 10px;">Grizzly bar</a>
-      <a href="#attachments" style="color:#33b4e6;font-weight:600;margin:0 10px;">Attachments</a>
+      <a href="#mule-bins" style="color:#33b4e6;font-weight:600;margin:0 10px;">Mule bins</a>
+      <a href="#attachments" style="color:#33b4e6;font-weight:600;margin:0 10px;">Rippers</a>
       <a href="#trailers" style="color:#33b4e6;font-weight:600;margin:0 10px;">Dump trailers</a>
       <a href="#bins" style="color:#33b4e6;font-weight:600;margin:0 10px;">Construction bins</a>
       <a href="#accessories" style="color:#33b4e6;font-weight:600;margin:0 10px;">Accessories</a>
@@ -56,19 +57,24 @@ export const additionalProductsHtml = `<!-- Page Content -->
     </div>
   </div>
 
-  <div id="attachments" style="scroll-margin-top: 90px; margin-bottom: 50px;">
-    <h2 style="color: #006a9a; margin-bottom: 10px;">Skid-steer attachments</h2>
-    <p style="color: #555555; margin-bottom: 24px;">DeSite attachments designed for skidsteers.</p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-      <div class="catalog-sku-card">
-        <div class="catalog-sku-media">
-          <img src="/images/catalog/mulle-bin.webp" alt="DeSite Mulle Bin skid-steer attachment">
-        </div>
-        <p style="color: #006a9a; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8px;">In stock</p>
-        <h3 style="color: #006a9a; margin-bottom: 12px;">Mulle Bin</h3>
-        <p style="color: #2c2c2c; line-height: 1.8; margin-bottom: 16px;">Skid-steer mule bin for moving bulk material around the site without a separate dump truck cycle. Built to the same DeSite duty as the rest of the attachment range.</p>
-        <p style="color: #555555; font-size: 0.95rem; font-style: italic;">Stocked in Australia</p>
+  <div id="mule-bins" style="scroll-margin-top: 90px; margin-bottom: 50px;">
+    <h2 style="color: #006a9a; margin-bottom: 10px;">Mule bins</h2>
+    <p style="color: #555555; margin-bottom: 24px;">Skid-steer mule bins — separate from the SR rippers below.</p>
+    <div class="catalog-sku-card catalog-sku-wide">
+      <div class="catalog-sku-media">
+        <img src="/images/catalog/mulle-bin.webp" alt="DeSite Mule Bin">
       </div>
+      <p style="color: #006a9a; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8px;">In stock</p>
+      <h3 style="color: #006a9a; margin-bottom: 12px;">Mule Bin</h3>
+      <p style="color: #2c2c2c; line-height: 1.8; margin-bottom: 16px;">Skid-steer mule bin for moving bulk material around the site without a separate dump truck cycle.</p>
+      <p style="color: #555555; font-size: 0.95rem; font-style: italic;">Stocked in Australia</p>
+    </div>
+  </div>
+
+  <div id="attachments" style="scroll-margin-top: 90px; margin-bottom: 50px;">
+    <h2 style="color: #006a9a; margin-bottom: 10px;">Skid-steer rippers</h2>
+    <p style="color: #555555; margin-bottom: 24px;">DeSite SR-2 and SR-3 rippers for skid steers.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
       <div class="catalog-sku-card">
         <div class="catalog-sku-media">
           <img src="/images/catalog/sr2.webp" alt="DeSite SR-2 skid-steer ripper">

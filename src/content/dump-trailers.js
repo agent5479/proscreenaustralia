@@ -1,5 +1,11 @@
 export const dumpTrailersHtml = `<!-- Product Detail -->
 <section class="product-detail">
+  <div class="product-gallery">
+    <img src="/images/catalog/xd-35.webp" alt="DeSite Xtreme Duty dump trailer XD 35">
+    <img src="/images/catalog/xd-55.webp" alt="DeSite Xtreme Duty dump trailer XD 55">
+    <img src="/images/catalog/xd-80.webp" alt="DeSite Xtreme Duty dump trailer XD 80">
+  </div>
+
   <div class="product-header">
     <h1>DeSite Dump Trailers — XD 35, 55 &amp; 80</h1>
     <p>Xtreme Duty dump trailers with excavator-rated laminated steel floors, barn-door tailgate and a single-axle dual-wheel layout for compact gear. The full XD range is stocked in Australia.</p>
@@ -8,12 +14,6 @@ export const dumpTrailersHtml = `<!-- Product Detail -->
       <a href="#xd-55" style="color:#33b4e6;font-weight:600;margin:0 12px;">XD 55 ↓</a>
       <a href="#xd-80" style="color:#33b4e6;font-weight:600;margin:0 12px;">XD 80 ↓</a>
     </p>
-  </div>
-
-  <div class="product-gallery">
-    <img src="/images/catalog/xd-35.webp" alt="DeSite Xtreme Duty dump trailer XD 35">
-    <img src="/images/catalog/xd-55.webp" alt="DeSite Xtreme Duty dump trailer XD 55">
-    <img src="/images/catalog/xd-80.webp" alt="DeSite Xtreme Duty dump trailer XD 80">
   </div>
 
   <div class="product-details">

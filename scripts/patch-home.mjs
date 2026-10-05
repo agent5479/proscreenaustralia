@@ -15,7 +15,7 @@ const extraCards = `
       <a class="equipment-card" href="/products/skid-steer-attachments">
         <img src="/images/catalog/mulle-bin.webp" alt="DeSite skid-steer attachments">
         <h3>Skid-Steer Attachments</h3>
-        <p>Mulle Bin, SR-2 and SR-3 — stocked with the DeSite range.</p>
+        <p>Mule bins are listed separately. SR-2 and SR-3 rippers are stocked with the DeSite range.</p>
       </a>
       <a class="equipment-card" href="/products/grizzly-bar">
         <img src="/images/grizzly2.jpg" alt="DeSite grizzly bar">

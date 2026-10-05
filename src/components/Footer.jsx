@@ -39,15 +39,16 @@ export default function Footer() {
 
         <div>
           <h3>Products</h3>
+          <Link to="/products/static-grizzly">Static Grizzly (78 & 108)</Link>
           <Link to="/products/slg-108vfrb">Proscreen SLG-108VFRB</Link>
           <Link to="/products/slg-78vf">Proscreen SLG-78VF</Link>
           <Link to="/products/slg-78vf-flow">Proscreen SLG-78VF with Flow Control</Link>
           <Link to="/products/slg-68v">Proscreen SLG-68V</Link>
-          <Link to="/products/static-grizzly">Static Grizzly (78 & 108)</Link>
           <Link to="/products/mini-screeners">Mini Screeners</Link>
+          <Link to="/products/mule-bins">Mule Bins</Link>
           <Link to="/products/telehandler-bins">Telehandler Bins</Link>
           <Link to="/products/dump-trailers">Dump Trailers</Link>
-          <Link to="/products/skid-steer-attachments">Skid-Steer Attachments</Link>
+          <Link to="/products/skid-steer-attachments">Skid-Steer Rippers</Link>
           <Link to="/products/grizzly-bar">Grizzly Bar</Link>
         </div>
 
